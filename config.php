@@ -1,25 +1,22 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/zotamall/zadmin/');
-define('HTTP_CATALOG', 'http://localhost/zotamall/');
+define('HTTP_SERVER', 'http://localhost/zotamall/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/zotamall/zadmin/');
-define('HTTPS_CATALOG', 'http://localhost/zotamall/');
+define('HTTPS_SERVER', 'http://localhost/zotamall/');
 
 // DIR
-define('DIR_APPLICATION', 'E:\xampp\htdocs\zotamall/zadmin/');
+define('DIR_APPLICATION', 'E:\xampp\htdocs\zotamall/application/');
 define('DIR_SYSTEM', 'E:\xampp\htdocs\zotamall/system/');
-define('DIR_LANGUAGE', 'E:\xampp\htdocs\zotamall/zadmin/language/');
-define('DIR_TEMPLATE', 'E:\xampp\htdocs\zotamall/zadmin/view/template/');
+define('DIR_LANGUAGE', 'E:\xampp\htdocs\zotamall/application/language/');
+define('DIR_TEMPLATE', 'E:\xampp\htdocs\zotamall/application/view/theme/');
 define('DIR_CONFIG', 'E:\xampp\htdocs\zotamall/system/config/');
 define('DIR_IMAGE', 'E:\xampp\htdocs\zotamall/image/');
 define('DIR_CACHE', 'E:\xampp\htdocs\zotamall/system/cache/');
 define('DIR_DOWNLOAD', 'E:\xampp\htdocs\zotamall/system/download/');
 define('DIR_UPLOAD', 'E:\xampp\htdocs\zotamall/system/upload/');
-define('DIR_LOGS', 'E:\xampp\htdocs\zotamall/system/logs/');
 define('DIR_MODIFICATION', 'E:\xampp\htdocs\zotamall/system/modification/');
-define('DIR_CATALOG', 'E:\xampp\htdocs\zotamall/');
+define('DIR_LOGS', 'E:\xampp\htdocs\zotamall/system/logs/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
