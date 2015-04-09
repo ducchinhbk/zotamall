@@ -1,1 +1,242 @@
 2015-04-08 16:59:00 - PHP Notice:  Error: Could not load model E:\xampp\htdocs\zotamall/application/model/catalog/information.php! in E:\xampp\htdocs\zotamall\system\engine\loader.php on line 24
+2015-04-09 7:04:51 - PHP Notice:  Error: Could not load model /var/www/html/zotamall/application/model/catalog/information.php! in /var/www/html/zotamall/system/engine/loader.php on line 24
+2015-04-09 7:04:53 - PHP Notice:  Error: Could not load model /var/www/html/zotamall/application/model/catalog/information.php! in /var/www/html/zotamall/system/engine/loader.php on line 24
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 7
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 7
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 8
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 9
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 10
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 12
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 13
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 14
+2015-04-09 7:06:02 - PHP Notice:  Use of undefined constant DIR_ROOT_NAME - assumed 'DIR_ROOT_NAME' in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 16
+2015-04-09 7:06:02 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 7:20:27 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 7:24:24 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 7:27:57 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 7:29:10 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 7:37:09 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 8:00:29 - PHP Notice:  Indirect modification of overloaded property ControllerProductProductDn::$data has no effect in /var/www/html/zotamall/application/controller/product/product_dn.php on line 17
+2015-04-09 8:00:29 - PHP Notice:  Error: Could not load model /var/www/html/zotamall/application/model/deal/product_dn.php! in /var/www/html/zotamall/system/engine/loader.php on line 24
+2015-04-09 8:00:37 - PHP Notice:  Indirect modification of overloaded property ControllerProductProductDn::$data has no effect in /var/www/html/zotamall/application/controller/product/product_dn.php on line 17
+2015-04-09 8:00:37 - PHP Notice:  Error: Could not load model /var/www/html/zotamall/application/model/deal/product_dn.php! in /var/www/html/zotamall/system/engine/loader.php on line 24
+2015-04-09 8:04:23 - PHP Notice:  Error: Could not load model /var/www/html/zotamall/application/model/deal/product_dn.php! in /var/www/html/zotamall/system/engine/loader.php on line 24
+2015-04-09 8:10:27 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 8:11:32 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 8:11:45 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 8:12:56 - PHP Notice:  Undefined variable: product_dn in /var/www/html/zotamall/application/view/theme/default/template/common/home.tpl on line 458
+2015-04-09 9:34:43 - PHP Notice:  Error: Could not load model /var/www/html/zotamall/zadmin/model/catalog/product_dn.php! in /var/www/html/zotamall/system/engine/loader.php on line 24
+2015-04-09 9:36:16 - PHP Notice:  Undefined index: product_id in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 93
+2015-04-09 9:36:16 - PHP Notice:  Undefined index: product_id in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 96
+2015-04-09 9:36:16 - PHP Notice:  Undefined index: edit in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 107
+2015-04-09 9:38:09 - PHP Notice:  Undefined index: edit in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 106
+2015-04-09 9:45:05 - PHP Notice:  Undefined index: product_id in /var/www/html/zotamall/zadmin/controller/catalog/product_dn.php on line 203
+2015-04-09 9:45:24 - PHP Notice:  Undefined index: product_id in /var/www/html/zotamall/zadmin/controller/catalog/product_dn.php on line 203
+2015-04-09 9:45:24 - PHP Notice:  Undefined index: product_dn_id in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 94
+2015-04-09 9:45:24 - PHP Notice:  Undefined index: product_dn_id in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 97
+2015-04-09 9:45:50 - PHP Notice:  Undefined index: product_dn_id in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 94
+2015-04-09 9:45:50 - PHP Notice:  Undefined index: product_dn_id in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_list.tpl on line 97
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: heading_title in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 8
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: error_warning in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 17
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: text_form in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 24
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:51:25 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:51:25 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:51:25 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: error_warning in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 17
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: text_form in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 24
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:51:54 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:51:54 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:51:54 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:52:34 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:52:34 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:52:34 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:52:34 - PHP Notice:  Undefined variable: text_form in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 24
+2015-04-09 10:52:34 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:52:34 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:52:34 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:52:34 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:52:34 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:53:49 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:53:49 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:53:49 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:53:49 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:53:49 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:53:49 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:53:49 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:53:49 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 39
+2015-04-09 10:54:06 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:54:06 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:54:06 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:54:06 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:54:06 - PHP Notice:  Undefined variable: languages in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:54:06 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:54:22 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:54:22 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:54:22 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:54:22 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:54:22 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 34
+2015-04-09 10:54:22 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 44
+2015-04-09 10:54:22 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 10:54:22 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:54:22 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:54:22 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 10:56:06 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:56:06 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:56:06 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:56:06 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:56:06 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 44
+2015-04-09 10:56:06 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 10:56:06 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:56:06 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:56:06 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 10:58:29 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:58:29 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:58:29 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:58:29 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:58:29 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 44
+2015-04-09 10:58:29 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 10:58:29 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:58:29 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:58:29 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 10:58:54 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:58:54 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:58:54 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:58:54 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:58:54 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 44
+2015-04-09 10:58:54 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 10:58:54 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:58:54 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:58:54 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 10:59:16 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 10:59:16 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:59:16 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 10:59:16 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 10:59:16 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 44
+2015-04-09 10:59:16 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 10:59:16 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:59:16 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 10:59:16 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 11:02:40 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:02:40 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:02:40 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:02:40 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:02:40 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 44
+2015-04-09 11:02:40 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 11:02:40 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:02:40 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:02:40 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 11:05:48 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:05:48 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:05:48 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:05:48 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:05:48 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 11:05:48 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:05:48 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:05:48 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 11:06:51 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:06:51 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:06:51 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:06:51 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:06:51 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 11:06:51 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:06:51 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:06:51 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 11:07:06 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:07:06 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:07:06 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:07:06 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:07:06 - PHP Notice:  Undefined variable: language in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 57
+2015-04-09 11:07:06 - PHP Notice:  Undefined variable: entry_description in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:07:06 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:07:06 - PHP Notice:  Use of undefined constant product_dn_id - assumed 'product_dn_id' in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 65
+2015-04-09 11:08:24 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:08:24 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:08:24 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:08:24 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:08:24 - PHP Notice:  Undefined index: decription in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 59
+2015-04-09 11:09:09 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:09:09 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:09:09 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:09:09 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:09:40 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:09:40 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:09:40 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:09:40 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:11:59 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:11:59 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:11:59 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:11:59 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:12:48 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:12:48 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:12:48 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:12:48 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:13:22 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:13:22 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:13:22 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:13:22 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:15:41 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:15:41 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:15:41 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:15:41 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:19:21 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:19:21 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:19:21 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:19:21 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:19:27 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:19:27 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:19:27 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:19:27 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:19:44 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:19:44 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:19:44 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:19:44 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:21:50 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:21:50 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:21:50 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:21:50 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:22:13 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:22:13 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:22:13 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:22:13 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:22:29 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:22:29 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:22:29 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:22:29 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:23:33 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:23:33 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:23:33 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:23:33 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:24:13 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:24:13 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:24:13 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:24:13 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:24:21 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:24:21 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:24:21 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:24:21 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:28:49 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:28:49 - PHP Notice:  Undefined variable: cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:28:49 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:28:49 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:31:01 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:31:01 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:31:01 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:31:08 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:31:08 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:31:08 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:31:17 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:31:17 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:31:17 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 11:33:24 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
+2015-04-09 11:33:24 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
+2015-04-09 11:33:24 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27

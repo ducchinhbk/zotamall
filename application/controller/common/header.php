@@ -38,33 +38,17 @@ class ControllerCommonHeader extends Controller {
 			$data['logo'] = '';
 		}
 
-
-		$data['home'] = $this->url->link('common/home');
-		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
-		$data['account'] = $this->url->link('account/account', '', 'SSL');
-		$data['register'] = $this->url->link('account/register', '', 'SSL');
-		$data['login'] = $this->url->link('account/login', '', 'SSL');
-		$data['logout'] = $this->url->link('account/logout', '', 'SSL');
-		$data['shopping_cart'] = $this->url->link('checkout/cart');
-		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
-		$data['contact'] = $this->url->link('information/contact');
-
 		$status = true;
-
 		if (isset($this->request->server['HTTP_USER_AGENT'])) {
 			$robots = explode("\n", str_replace(array("\r\n", "\r"), "\n", trim($this->config->get('config_robots'))));
 
 			foreach ($robots as $robot) {
 				if ($robot && strpos($this->request->server['HTTP_USER_AGENT'], trim($robot)) !== false) {
 					$status = false;
-
 					break;
 				}
 			}
 		}
-
-	
-		
         return $this->load->view('default/template/common/header.tpl', $data);
 		
 	}
