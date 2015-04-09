@@ -23,7 +23,7 @@ class ModelProductProductDn extends Model{
 
     public function getProducts($page, $limit){
         $start = ($page - 1) * $limit;
-        $query = $this->db->query("SELECT * FROM `". DB_PREFIX . "product_dn` ORDER BY number_dn DESC LIMIT ". (int)$start. "," . (int)$limit);
+        $query = $this->db->query("SELECT * FROM `". DB_PREFIX . "product_dn` WHERE status = 1 ORDER BY number_dn DESC LIMIT ". (int)$start. "," . (int)$limit);
         return $query->rows;
     }
 

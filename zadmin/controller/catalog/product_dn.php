@@ -64,7 +64,7 @@ class ControllerCatalogProductDn extends Controller {
 
             if (isset($productDN['image']) && is_file(DIR_IMAGE . $productDN['image']) ) {
                 $image = $this->model_tool_image->resize($productDN['image'], 40, 40);
-            } elseif(strpos($productDN['image'], DIR_ROOT_NAME) < 0){
+            } elseif(strpos($productDN['image'], DIR_ROOT_NAME) == false){
                 $image = $productDN['image'];
             } else {
                 $image = $this->model_tool_image->resize('no_image.jpg', 40, 40);
@@ -216,7 +216,7 @@ class ControllerCatalogProductDn extends Controller {
         foreach ($results as $result) {
             if (isset($result['image']) && is_file(DIR_IMAGE . $result['image']) ) {
                 $image = $this->model_tool_image->resize($result['image'], 40, 40);
-            } elseif(strpos($result['image'], DIR_ROOT_NAME) < 0){
+            } elseif(strpos($result['image'], DIR_ROOT_NAME) == false){
                 $image = $result['image'];
             } else {
                 $image = $this->model_tool_image->resize('no_image.jpg', 40, 40);
