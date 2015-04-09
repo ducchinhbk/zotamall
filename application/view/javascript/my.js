@@ -148,6 +148,10 @@ function clickExistedProductDn(link, name, number_dn, max_dn){
 }
 
 function btnDNClick(link, data){
+    if(link == ''){
+        $('#linkSPDN').focus();
+        return;
+    }
     if(isValidURL(link)){
         var data = {
             "link" : link

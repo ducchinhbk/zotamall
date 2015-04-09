@@ -1,6 +1,6 @@
 <?php
 
-class ControllerProductDaily extends Controller
+class ControllerProductShock extends Controller
 {
     public function index()
     {

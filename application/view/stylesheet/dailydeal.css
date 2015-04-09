@@ -22,7 +22,7 @@
 	text-transform: capitalize!important;
 }
 .i-cartFastLane-dailydeal{
-	background: url("../image/icon-dailydeal.png") no-repeat 0 0!important;
+	background: url("../../../image/icon-dailydeal.png") no-repeat 0 0!important;
 	margin-top: 12px;
 	margin-left: 5px;
 }
@@ -62,7 +62,7 @@
 	background: #f2f2f2;
 }
 .icon-promotion1{
-	background: url(../image/icon-promotion1l.png);
+	background: url(../../../image/icon-promotion1l.png);
 	position: absolute;
 	width: 23px;
 	height: 22px;
@@ -76,7 +76,7 @@
 	margin-left: 10px;
 }
 .icon-promotion2{
-	background: url(../image/icon-promotion2.png);
+	background: url(../../../image/icon-promotion2.png);
 	position: absolute;
 	width: 23px;
 	height: 22px;
@@ -84,7 +84,7 @@
 	top: -3px;
 }
 .icon-promotion3{
-	background: url(../image/icon-promotion3.png);
+	background: url(../../../image/icon-promotion3.png);
 	position: absolute;
 	width: 23px;
 	height: 22px;
@@ -209,7 +209,7 @@
 }
 .ships-dt:after{
 	content: "";
-	background: url(../image/icon-shipsl.png) no-repeat;
+	background: url(../../../image/icon-shipsl.png) no-repeat;
 	width: 20px;
 	height: 18px;
 	position: absolute;
@@ -242,7 +242,7 @@ li.tab1:before{
 #getting-started{
 	position: relative;
 	z-index: 20;
-	background: url(../image/bg-timer-v1.png) 30px 5px no-repeat #264a5f;
+	background: url(../../../image/bg-timer-v1.png) 30px 5px no-repeat #264a5f;
 	padding: 17px 5px 15px 85px;
 	border: 1px solid #fff;
 	box-shadow: 0 0 3px #888;
@@ -308,7 +308,7 @@ li.tab1:before{
     font-size: 18px;
 }
 #getting-starteds, #getting-starteds2{
-	background: url(../image/bg-timer-1.png) 0 0 no-repeat;
+	background: url(../../../image/bg-timer-1.png) 0 0 no-repeat;
 	color: #3f3f3f;
 	font-size: 22px;
 	height: 60px;
@@ -325,7 +325,7 @@ li.tab1:before{
 	min-width: 17px;
 }
 .total-cart-detail .icon{
-	background: url("../image/gh.png") no-repeat 0 0!important;
+	background: url("../../../image/gh.png") no-repeat 0 0!important;
 	vertical-align: text-top;
 	display: inline-block;
 	width: 28px;

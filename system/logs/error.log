@@ -240,3 +240,5 @@
 2015-04-09 11:33:24 - PHP Notice:  Undefined variable: button_save in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 6
 2015-04-09 11:33:24 - PHP Notice:  Undefined variable: button_cancel in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 7
 2015-04-09 11:33:24 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
+2015-04-09 19:05:07 - PHP Notice:  Undefined variable: header in D:\xampp\htdocs\zotamall\application\view\theme\default\template\product\dailydeal.tpl on line 497
+2015-04-09 19:05:07 - PHP Notice:  Undefined variable: footer in D:\xampp\htdocs\zotamall\application\view\theme\default\template\product\dailydeal.tpl on line 901

@@ -7,13 +7,13 @@
                     <a href="/<?php echo DIR_ROOT_NAME; ?>">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="">Deal sốc</a>
+                    <a href="index.php?route=product/shock">Deal sốc</a>
                 </li>
                 <li>
-                    <a href="index.php?route=deal/daily">Daily deal</a>
+                    <a href="index.php?route=product/daily">Daily deal</a>
                 </li>
                 <li>
-                    <a href="">Du lịch</a>
+                    <a href="http://www.zotadi.com/" target="_blank">Du lịch</a>
                 </li>
             </ul>
         </div><!--End-nav-foodpanda-->
