@@ -14,7 +14,7 @@ class ModelProductProductDn extends Model{
                 // update product_ dn
                 $this->db->query("UPDATE `". DB_PREFIX ."product_dn` SET number_dn = number_dn + ". (int)$data['soluong'] ." WHERE product_dn_id = ". $product_dn_id);
             }else{
-                $this->db->query("INSERT INTO `" . DB_PREFIX . "product_dn` SET link = '". $this->db->escape($data['link']) . "' , number_dn = 1, status = 1");
+                $this->db->query("INSERT INTO `" . DB_PREFIX . "product_dn` SET link = '". $this->db->escape($data['link']) . "' , number_dn = 1, status = 0");
                 $product_dn_id = $this->db->getLastId();
                 $this->model_product_customer_dn->insertOrUpdateCustomerDn($data, $product_dn_id);
             }

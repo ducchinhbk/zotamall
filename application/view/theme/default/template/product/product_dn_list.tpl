@@ -1,16 +1,16 @@
 <div class="homepage-1">
     <div class="homepage-banner mbl">
         <h5>Danh sách sản phẩm được đề nghị DEAL nhiều nhất</h5>
-        <?php if($product_dns){ ?>
-        <?php foreach($product_dns as $product_dn){ ?>
-        <?php
-              $image = $product_dn['image'];
-              $link = $product_dn['link'];
-              $name = $product_dn['name'];
-              $number_dn = $product_dn['number_dn'];
-              $max_dn = $product_dn['max_dn'];
-        ?>
-            <ul class="thumbs clearfix topvendors">
+        <ul class="thumbs clearfix topvendors">
+            <?php if($product_dns){ ?>
+            <?php foreach($product_dns as $product_dn){ ?>
+                <?php
+                      $image = $product_dn['image'];
+                      $link = $product_dn['link'];
+                      $name = $product_dn['name'];
+                      $number_dn = $product_dn['number_dn'];
+                      $max_dn = $product_dn['max_dn'];
+                ?>
                 <li>
                     <p class="top-thumb">
                         Đã có <?php echo $number_dn; ?>/<?php echo $max_dn; ?> đề nghị bán sản phẩm này
@@ -25,7 +25,7 @@
                         Đề nghị
                     </a>
                 </li>
-            </ul>
-        <?php }} ?>
+            <?php }} ?>
+        </ul>
     </div>
 </div>
