@@ -3,24 +3,24 @@ class ControllerCatalogProductDn extends Controller {
     private $error = array();
 
     public function index() {
-        $this->document->setTitle('San pham de nghi');
+        $this->document->setTitle('Sản phẩm đề nghị');
         $this->load->model('catalog/product_dn');
         $this->getList();
     }
 
     public function edit(){
         $this->load->language('catalog/product');
-        $this->document->setTitle('San pham de nghi');
+        $this->document->setTitle('Sản phẩm đề nghị');
         $this->load->model('catalog/product_dn');
 
-        if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
+        if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validatePermission()) {
             $this->model_catalog_product_dn->updateProductDn($this->request->post);
         }
         $this->getFrom();
     }
 
     public function delete(){
-        $this->document->setTitle('Required Products');
+        $this->document->setTitle('Sản phẩm đề nghị');
         $this->load->model('catalog/product_dn');
 
         if (isset($this->request->post['selected']) && $this->validatePermission()) {
@@ -53,19 +53,21 @@ class ControllerCatalogProductDn extends Controller {
                 'separator' => false
             );
             $data['breadcrumbs'][] = array(
-                'text'      => 'San pham de nghi',
+                'text'      => 'Sản phẩm đề nghị',
                 'href'      => $this->url->link('catalog/product_dn', 'token=' . $this->session->data['token'] . $url, 'SSL'),
                 'separator' => ' :: '
             );
             $data['cancel'] = $this->url->link('catalog/product_dn', 'token=' . $this->session->data['token'] . $url, 'SSL');
-
+            $data['action'] = $this->url->link('catalog/product_dn/edit', 'token=' . $this->session->data['token'] . $url, 'SSL');
 
             $this->load->model('tool/image');
 
             if (isset($productDN['image']) && is_file(DIR_IMAGE . $productDN['image']) ) {
                 $image = $this->model_tool_image->resize($productDN['image'], 40, 40);
+            } elseif(strpos($productDN['image'], DIR_ROOT_NAME) >= 0){
+                $image = $productDN['image'];
             } else {
-                $image = $this->model_tool_image->resize('no_image.png', 40, 40);
+                $image = $this->model_tool_image->resize('no_image.jpg', 40, 40);
             }
 
             $data['productdn'] = array(
@@ -74,12 +76,14 @@ class ControllerCatalogProductDn extends Controller {
                 'link' => $productDN['link'],
                 'image' => $image,
                 'description' => $productDN['description'],
-                'number_dn' => $productDN['number_dn']
+                'number_dn' => $productDN['number_dn'],
+                'max_dn' => $productDN['max_dn'],
+                'status' => $productDN['status']
             );
 
             $data['token'] = $this->session->data['token'];
             $data['error_warning']= '';
-            $data['text_form'] = 'Edit san pham de nghi';
+            $data['text_form'] = 'Chỉnh sửa sản phẩm đề nghị';
 
             $template = 'catalog/product_dn_form.tpl';
             $data['header'] = $this->load->controller('common/header');
@@ -181,7 +185,7 @@ class ControllerCatalogProductDn extends Controller {
         );
 
         $data['breadcrumbs'][] = array(
-            'text' => $this->language->get('San pham de nghi'),
+            'text' => $this->language->get('Sản phẩm đề nghị'),
             'href' => $this->url->link('catalog/product_dn', 'token=' . $this->session->data['token'] . $url, 'SSL')
         );
 
@@ -189,7 +193,7 @@ class ControllerCatalogProductDn extends Controller {
         $data['copy'] = $this->url->link('catalog/product_dn/copy', 'token=' . $this->session->data['token'] . $url, 'SSL');
         $data['delete'] = $this->url->link('catalog/product_dn/delete', 'token=' . $this->session->data['token'] . $url, 'SSL');
 
-        $data['products'] = array();
+        $data['productdns'] = array();
 
         $filter_data = array(
             'filter_name'	  => $filter_name,
@@ -210,10 +214,12 @@ class ControllerCatalogProductDn extends Controller {
 
         $results = $this->model_catalog_product_dn->getProducts($page, 50);
         foreach ($results as $result) {
-            if (is_file(DIR_IMAGE . $result['image'])) {
+            if (isset($result['image']) && is_file(DIR_IMAGE . $result['image']) ) {
                 $image = $this->model_tool_image->resize($result['image'], 40, 40);
+            } elseif(strpos($result['image'], DIR_ROOT_NAME) >= 0){
+                $image = $result['image'];
             } else {
-                $image = $this->model_tool_image->resize('no_image.png', 40, 40);
+                $image = $this->model_tool_image->resize('no_image.jpg', 40, 40);
             }
 
             $data['productdns'][] = array(

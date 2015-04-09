@@ -6,7 +6,7 @@
         <li><a class="parent"><?php echo $text_product; ?></a>
             <ul>
                 <li><a href="<?php echo $product; ?>"><?php echo $text_product; ?></a></li>
-                <li><a href="<?php echo $product_dn; ?>">San pham de nghi</a></li>
+                <li><a href="<?php echo $product_dn; ?>">Sản phẩm đề nghị</a></li>
             </ul>
         </li>
 

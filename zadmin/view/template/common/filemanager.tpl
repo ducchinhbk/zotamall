@@ -6,6 +6,20 @@
     </div>
     <div class="modal-body">
       <div class="row">
+          <div class="col-sm-3">
+              <h5 class="modal-title">Sử dụng external link:</h5>
+          </div>
+          <div class="col-sm-9">
+              <div class="input-group">
+                <input type="text" id="externalLink" name="externalLink" value="" placeholder="Nhập external link" class="form-control" />
+                <span class="input-group-btn">
+                    <button type="button" onclick="saveExternalLink();" data-toggle="tooltip" title="Save" id="button-search" class="btn btn-primary"><i class="fa fa-save"></i></button>
+                </span>
+              </div>
+          </div>
+      </div>
+      <hr />
+      <div class="row">
         <div class="col-sm-5"><a href="<?php echo $parent; ?>" data-toggle="tooltip" title="<?php echo $button_parent; ?>" id="button-parent" class="btn btn-default"><i class="fa fa-level-up"></i></a> <a href="<?php echo $refresh; ?>" data-toggle="tooltip" title="<?php echo $button_refresh; ?>" id="button-refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
           <button type="button" data-toggle="tooltip" title="<?php echo $button_upload; ?>" id="button-upload" class="btn btn-primary"><i class="fa fa-upload"></i></button>
           <button type="button" data-toggle="tooltip" title="<?php echo $button_folder; ?>" id="button-folder" class="btn btn-default"><i class="fa fa-folder"></i></button>
@@ -69,6 +83,12 @@ $('a.thumbnail').on('click', function(e) {
 
 	$('#modal-image').modal('hide');
 });
+
+function saveExternalLink(){
+    $('#<?php echo $thumb; ?>').find('img').attr('src', $('#externalLink').val().trim());
+    $('#<?php echo $target; ?>').attr('value', $('#externalLink').val().trim());
+    $('#modal-image').modal('hide');
+}
 
 $('a.directory').on('click', function(e) {
 	e.preventDefault();

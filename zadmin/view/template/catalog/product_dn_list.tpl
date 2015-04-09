@@ -79,12 +79,12 @@
                         <thead>
                         <tr>
                             <td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
-                            <td class="text-center"><?php echo $column_image; ?></td>
-                            <td class="text-center">Ten san pham</td>
+                            <td class="text-center">Image</td>
+                            <td class="text-center">Tên sản phẩm</td>
                             <td class="text-left">Link</td>
-                            <td class="text-center">Tong so yeu cau</td>
-                            <td class="text-center">Trang thai</td>
-                            <td class="text-right">Tac vu</td>
+                            <td class="text-center">Tổng số yêu cầu</td>
+                            <td class="text-center">Trạng thái</td>
+                            <td class="text-right">Tác vụ</td>
                         </tr>
                         </thead>
                         <tbody>
@@ -97,7 +97,7 @@
                                 <input type="checkbox" name="selected[]" value="<?php echo $productdn['product_dn_id']; ?>" />
                                 <?php } ?></td>
                             <td class="text-center"><?php if ($productdn['image']) { ?>
-                                <img src="<?php echo $productdn['image']; ?>" alt="<?php echo $productdn['name']; ?>" class="img-thumbnail" />
+                                <img style="width: 40px; height: 40px;" src="<?php echo $productdn['image']; ?>" alt="<?php echo $productdn['name']; ?>" class="img-thumbnail" />
                                 <?php } else { ?>
                                 <span class="img-thumbnail list"><i class="fa fa-camera fa-2x"></i></span>
                                 <?php } ?></td>
