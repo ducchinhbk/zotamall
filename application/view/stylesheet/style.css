@@ -827,3 +827,13 @@ fieldset {
 .btn-find-foods1{
 	margin-left: 0px!important;
 }
+
+.profile_li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Arial";
+    font-size: 13px;
+}
+.profile_li a:hover{
+    text-decoration: none;
+}

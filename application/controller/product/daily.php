@@ -20,6 +20,8 @@ class ControllerProductDaily extends Controller
         $headerAction = new Action('common/header', $loginQuery);
         $data['header'] = $headerAction->execute($this->registry);
 
+        $data['login'] = $this->load->controller('login/login');
+
         $this->response->setOutput($this->load->view('default/template/product/dailydeal.tpl', $data));
     }
 }

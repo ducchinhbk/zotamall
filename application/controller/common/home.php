@@ -24,9 +24,7 @@ class ControllerCommonHome extends Controller {
         $headerAction = new Action('common/header', $loginQuery);
         $data['header'] = $headerAction->execute($this->registry);
 
-        $loginAction = new Action('login/login', array('currentpage'=> 'common/home'));
-        $data['login'] = $loginAction->execute($this->registry);
-
+        $data['login'] = $this->load->controller('login/login');
         $this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
 	}
 }

@@ -31,7 +31,7 @@ use Facebook\FacebookHttpable;
 use Facebook\FacebookCurlHttpClient;
 
 class ControllerLoginLogin extends Controller {
-    public function index($currentPage = '') {
+    public function index() {
         $app_id = '651313361641726';
         $app_secret = '2b4fd78d7d3acdfcfff6e50c064b8f37';
         $redirect_url = HTTP_SERVER. 'login';
@@ -62,7 +62,7 @@ class ControllerLoginLogin extends Controller {
             $this->customer = new Customer($this->registry);
 
             // redirect to current page
-            $this->response->redirect($this->url->link($currentPage, '', 'SSL'));
+            $this->response->redirect($this->url->link($this->session->data['currentpage'], '', 'SSL'));
         }else{
             $data['linkLoginFacebook'] = $helper->getLoginUrl();
             return $this->load->view('default/template/login/login.tpl', $data);

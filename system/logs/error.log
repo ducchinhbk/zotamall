@@ -325,3 +325,52 @@
                     name = 'Robert Cuong'
                     image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
 2015-04-14 9:01:34 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 16:58:59 - PHP Notice:  Error: Unknown column 'image' in 'field list'<br />Error No: 1054<br />INSERT INTO `customer` SET
+                    lastname = 'Robert Cuong' ,
+                    email = '' ,
+                    customer_group_id = 1,
+                    store_id = 1,
+                    firstname = '',
+                    telephone = '',
+                    fax = '',
+                    password = '',
+                    salt = '',
+                    newsletter = '',
+                    address_id = 1,
+                    custom_field = '',
+                    ip = '',
+                    status = 1,
+                    approved = 1,
+                    safe = 1,
+                    token = '',
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30',
+                    date_added = NOW() in D:\xampp\htdocs\zotamall\system\library\db\mysqli.php on line 40
+2015-04-14 16:59:28 - PHP Notice:  Error: Unknown column 'image' in 'field list'<br />Error No: 1054<br />INSERT INTO `customer` SET
+                    lastname = 'Robert Cuong' ,
+                    email = '' ,
+                    customer_group_id = 1,
+                    store_id = 1,
+                    firstname = '',
+                    telephone = '',
+                    fax = '',
+                    password = '',
+                    salt = '',
+                    newsletter = '',
+                    address_id = 1,
+                    custom_field = '',
+                    ip = '',
+                    status = 1,
+                    approved = 1,
+                    safe = 1,
+                    token = '',
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30',
+                    date_added = NOW() in D:\xampp\htdocs\zotamall\system\library\db\mysqli.php on line 40
+2015-04-14 17:07:30 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 1 in D:\xampp\htdocs\zotamall\system\library\db\mysqli.php on line 40
+2015-04-14 17:07:45 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 1 in D:\xampp\htdocs\zotamall\system\library\db\mysqli.php on line 40
+2015-04-14 17:44:46 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 1 in D:\xampp\htdocs\zotamall\system\library\db\mysqli.php on line 40

@@ -19,12 +19,20 @@
         </div><!--End-nav-foodpanda-->
         <ul class="header-links">
             <?php if(isset($name) && isset($email) && isset($image)){ ?>
-                <img src="<?php echo $image?>" />&nbsp; <?php echo $customer_name; ?>&nbsp;&nbsp;
-                <a href="<?php echo $logout?>">
-                    <img style="width:30px" src="https://cdn0.iconfinder.com/data/icons/large-glossy-icons/512/Logout.png">
-                </a>
+                <li class="profile_li">
+                    <a href="javascript:void(0)" onclick="toggleProfileUser();">
+                        <img src="<?php echo $image?>" />&nbsp; <?php echo $customer_name; ?>&nbsp;&nbsp;
+                    </a>
+                    <a href="<?php echo $logout?>">
+                        <img style="width:30px" src="https://cdn0.iconfinder.com/data/icons/large-glossy-icons/512/Logout.png">
+                    </a>
+                    <ul id="toggleProfileUserUL" style="display: none">
+                        <li>Profile</li>
+                        <li>Cart</li>
+                    </ul>
+                </li>
             <?php }else{ ?>
-                <li class="customer-account"><a href="#" class="btn btn-default customer-login js-auth-login">Đăng nhập</a></li>
+                <li class="customer-account"><a href="javascript:void(0);" class="btn btn-default customer-login js-auth-login">Đăng nhập</a></li>
             <?php } ?>
         </ul>
     </div>
@@ -43,3 +51,8 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function toggleProfileUser(){
+        $('#toggleProfileUserUL').toggle();
+    }
+</script>
