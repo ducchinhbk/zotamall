@@ -1,27 +1,30 @@
 <?php
 define('DIR_ROOT_NAME','zotamall');
+define('DIR_APP_NAME', 'zadmin');
+define('ROOT_PATH', 'D:\xampp\htdocs/');
+define('PROJECT_PATH', ROOT_PATH. DIR_ROOT_NAME);
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost/zotamall/zadmin/');
-define('HTTP_CATALOG', 'http://localhost/zotamall/');
+define('HTTP_SERVER', 'http://localhost/'. DIR_ROOT_NAME .'/'. DIR_APP_NAME .'/');
+define('HTTP_CATALOG', 'http://localhost/'. DIR_ROOT_NAME .'/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/zotamall/zadmin/');
-define('HTTPS_CATALOG', 'http://localhost/zotamall/');
+define('HTTPS_SERVER', 'http://localhost/'. DIR_ROOT_NAME .'/'. DIR_APP_NAME .'/');
+define('HTTPS_CATALOG', 'http://localhost/'. DIR_ROOT_NAME .'/');
 
 // DIR
-define('DIR_APPLICATION', '/var/www/html/zotamall/zadmin/');
-define('DIR_SYSTEM', '/var/www/html/zotamall/system/');
-define('DIR_LANGUAGE', '/var/www/html/zotamall/zadmin/language/');
-define('DIR_TEMPLATE', '/var/www/html/zotamall/zadmin/view/template/');
-define('DIR_CONFIG', '/var/www/html/zotamall/system/config/');
-define('DIR_IMAGE', '/var/www/html/zotamall/image/');
-define('DIR_CACHE', '/var/www/html/zotamall/system/cache/');
-define('DIR_DOWNLOAD', '/var/www/html/zotamall/system/download/');
-define('DIR_UPLOAD', '/var/www/html/zotamall/system/upload/');
-define('DIR_LOGS', '/var/www/html/zotamall/system/logs/');
-define('DIR_MODIFICATION', '/var/www/html/zotamall/system/modification/');
-define('DIR_CATALOG', '/var/www/html/zotamall/');
+define('DIR_APPLICATION', PROJECT_PATH. '/'. DIR_APP_NAME .'/');
+define('DIR_SYSTEM', PROJECT_PATH . '/system/');
+define('DIR_LANGUAGE', PROJECT_PATH . '/'. DIR_APP_NAME .'/language/');
+define('DIR_TEMPLATE', PROJECT_PATH. '/'. DIR_APP_NAME .'/view/template/');
+define('DIR_CONFIG', PROJECT_PATH. '/system/config/');
+define('DIR_IMAGE', PROJECT_PATH. '/image/');
+define('DIR_CACHE', PROJECT_PATH. '/system/cache/');
+define('DIR_DOWNLOAD', PROJECT_PATH . '/system/download/');
+define('DIR_UPLOAD', PROJECT_PATH. '/system/upload/');
+define('DIR_LOGS', PROJECT_PATH. '/system/logs/');
+define('DIR_MODIFICATION', PROJECT_PATH. '/system/modification/');
+define('DIR_CATALOG', PROJECT_PATH.'/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
