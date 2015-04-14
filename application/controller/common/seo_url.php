@@ -17,6 +17,12 @@ class ControllerCommonSeoUrl extends Controller {
             if (strpos($url,'daily') !== false) {
                 $this->request->get['route'] = 'product/daily';
             }
+            if (strpos($url,'logout') !== false) {
+                $this->request->get['route'] = 'login/login/logout';
+            }
+            if (strpos($url,'login') !== false) {
+                $this->request->get['route'] = 'login/login';
+            }
 
             if (isset($this->request->get['route'])) {
                 return new Action($this->request->get['route']);
@@ -43,6 +49,12 @@ class ControllerCommonSeoUrl extends Controller {
                 if(strpos($route, 'product/daily') !== false){
                     $url .= '/daily';
                 }
+                if(strpos($route, 'login/login/logout') !== false){
+                    $url.= '/logout';
+                }elseif(strpos($route, 'login/login') !== false){
+                    $url.= '/login';
+                }
+
             }elseif ($key == 'product_id'){
                 $query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "product` WHERE product_id=" . (int)$key);
                 $product = $query->row;

@@ -254,3 +254,74 @@
 2015-04-13 20:48:45 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\zotamall\application\controller\common\header.php on line 24
 2015-04-13 21:53:57 - PHP Notice:  Array to string conversion in D:\xampp\htdocs\zotamall\system\engine\action.php on line 12
 2015-04-13 21:53:57 - PHP Unknown:  Object of class Action could not be converted to string in D:\xampp\htdocs\zotamall\application\view\theme\default\template\common\home.tpl on line 28
+2015-04-14 6:08:10 - PHP Notice:  Error: Unknown column 'customer_field' in 'field list'<br />Error No: 1054<br />INSERT INTO `customer` SET
+                    lastname = 'Robert Cuong' ,
+                    email = '' ,
+                    customer_group_id = 1,
+                    store_id = 1,
+                    firstname = '',
+                    telephone = '',
+                    fax = '',
+                    password = '',
+                    salt = '',
+                    newsletter = '',
+                    address_id = 1,
+                    customer_field = '',
+                    ip = '',
+                    status = 1,
+                    approved = 1,
+                    safe = 1,
+                    token = '',
+                    date_added = NOW() in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-14 6:08:10 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 6:11:34 - PHP Notice:  Error: Unknown column 'customer_field' in 'field list'<br />Error No: 1054<br />INSERT INTO `customer` SET
+                    lastname = 'Robert Cuong' ,
+                    email = '' ,
+                    customer_group_id = 1,
+                    store_id = 1,
+                    firstname = '',
+                    telephone = '',
+                    fax = '',
+                    password = '',
+                    salt = '',
+                    newsletter = '',
+                    address_id = 1,
+                    customer_field = '',
+                    ip = '',
+                    status = 1,
+                    approved = 1,
+                    safe = 1,
+                    token = '',
+                    date_added = NOW() in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-14 6:11:34 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 6:12:14 - PHP Notice:  Error: Unknown column 'customer_field' in 'field list'<br />Error No: 1054<br />INSERT INTO `customer` SET
+                    lastname = 'Robert Cuong' ,
+                    email = '' ,
+                    customer_group_id = 1,
+                    store_id = 1,
+                    firstname = '',
+                    telephone = '',
+                    fax = '',
+                    password = '',
+                    salt = '',
+                    newsletter = '',
+                    address_id = 1,
+                    customer_field = '',
+                    ip = '',
+                    status = 1,
+                    approved = 1,
+                    safe = 1,
+                    token = '',
+                    date_added = NOW() in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-14 6:15:13 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 6:18:11 - PHP Notice:  Undefined index: customer_id in /var/www/html/zotamall/application/controller/common/home.php on line 13
+2015-04-14 6:18:17 - PHP Notice:  Undefined index: customer_id in /var/www/html/zotamall/application/controller/common/home.php on line 13
+2015-04-14 6:18:50 - PHP Notice:  Undefined index: customer_id in /var/www/html/zotamall/application/controller/common/home.php on line 13
+2015-04-14 6:18:51 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 7:52:41 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 7:58:11 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 8:19:57 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23
+2015-04-14 9:01:34 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-14 9:01:34 - PHP Notice:  Array to string conversion in /var/www/html/zotamall/system/library/url.php on line 23

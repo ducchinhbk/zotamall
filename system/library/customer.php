@@ -9,6 +9,7 @@ class Customer {
 	private $newsletter;
 	private $customer_group_id;
 	private $address_id;
+    private $image;
 
 	public function __construct($registry) {
 		$this->config = $registry->get('config');
@@ -29,6 +30,7 @@ class Customer {
 				$this->newsletter = $customer_query->row['newsletter'];
 				$this->customer_group_id = $customer_query->row['customer_group_id'];
 				$this->address_id = $customer_query->row['address_id'];
+                $this->image = $customer_query->row['image'];
 
 				$this->db->query("UPDATE " . DB_PREFIX . "customer SET cart = '" . $this->db->escape(isset($this->session->data['cart']) ? serialize($this->session->data['cart']) : '') . "', wishlist = '" . $this->db->escape(isset($this->session->data['wishlist']) ? serialize($this->session->data['wishlist']) : '') . "', ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "' WHERE customer_id = '" . (int)$this->customer_id . "'");
 
@@ -111,6 +113,7 @@ class Customer {
 		$this->newsletter = '';
 		$this->customer_group_id = '';
 		$this->address_id = '';
+        $this->image = '';
 	}
 
 	public function isLogged() {
@@ -164,4 +167,8 @@ class Customer {
 
 		return $query->row['total'];
 	}
+
+    public function getImage(){
+        return $this->image;
+    }
 }

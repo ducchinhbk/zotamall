@@ -42,3 +42,7 @@ CREATE TABLE IF NOT EXISTS `product_dn_to_customer` (
   `soluong` int(100) NOT NULL default '0',
   PRIMARY KEY (`product_dn_to_customer_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+ALTER TABLE `customer` ADD (
+  `image` varchar(100)
+);

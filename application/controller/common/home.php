@@ -9,20 +9,20 @@ class ControllerCommonHome extends Controller {
 			$this->document->addLink(HTTP_SERVER, 'canonical');
 		}
 
-        $loginQuery = '';
-        if(isset($this->request->get['name'])){
-            $loginQuery .= '?name='. $this->request->get['name'];
-        }
-        if(isset($this->request->get['email'])){
-            $loginQuery .= '&email='. $this->request->get['email'];
-        }
-        if(isset($this->request->get['image'])){
-            $loginQuery .= '&image='. $this->request->get['image'];
+        $loginQuery = array();
+        $this->session->data['currentpage'] = 'common/home';
+
+        if('' !== $this->customer->getId()){
+            $loginQuery['name'] = $this->customer->getLastName();
+            $loginQuery['email'] = $this->customer->getEmail();
+            $loginQuery['image'] = $this->customer->getImage();
         }
 
 		$data['footer'] = $this->load->controller('common/footer');
-		$data['header'] = $this->load->controller('common/header'. $loginQuery);
         $data['product_dn'] = $this->load->controller('product/product_dn');
+
+        $headerAction = new Action('common/header', $loginQuery);
+        $data['header'] = $headerAction->execute($this->registry);
 
         $loginAction = new Action('login/login', array('currentpage'=> 'common/home'));
         $data['login'] = $loginAction->execute($this->registry);

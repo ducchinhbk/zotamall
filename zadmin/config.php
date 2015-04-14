@@ -10,18 +10,18 @@ define('HTTPS_SERVER', 'http://localhost/zotamall/zadmin/');
 define('HTTPS_CATALOG', 'http://localhost/zotamall/');
 
 // DIR
-define('DIR_APPLICATION', 'D:\xampp\htdocs\zotamall/zadmin/');
-define('DIR_SYSTEM', 'D:\xampp\htdocs\zotamall/system/');
-define('DIR_LANGUAGE', 'D:\xampp\htdocs\zotamall/zadmin/language/');
-define('DIR_TEMPLATE', 'D:\xampp\htdocs\zotamall/zadmin/view/template/');
-define('DIR_CONFIG', 'D:\xampp\htdocs\zotamall/system/config/');
-define('DIR_IMAGE', 'D:\xampp\htdocs\zotamall/image/');
-define('DIR_CACHE', 'D:\xampp\htdocs\zotamall/system/cache/');
-define('DIR_DOWNLOAD', 'D:\xampp\htdocs\zotamall/system/download/');
-define('DIR_UPLOAD', 'D:\xampp\htdocs\zotamall/system/upload/');
-define('DIR_LOGS', 'D:\xampp\htdocs\zotamall/system/logs/');
-define('DIR_MODIFICATION', 'D:\xampp\htdocs\zotamall/system/modification/');
-define('DIR_CATALOG', 'D:\xampp\htdocs\zotamall/');
+define('DIR_APPLICATION', '/var/www/html/zotamall/zadmin/');
+define('DIR_SYSTEM', '/var/www/html/zotamall/system/');
+define('DIR_LANGUAGE', '/var/www/html/zotamall/zadmin/language/');
+define('DIR_TEMPLATE', '/var/www/html/zotamall/zadmin/view/template/');
+define('DIR_CONFIG', '/var/www/html/zotamall/system/config/');
+define('DIR_IMAGE', '/var/www/html/zotamall/image/');
+define('DIR_CACHE', '/var/www/html/zotamall/system/cache/');
+define('DIR_DOWNLOAD', '/var/www/html/zotamall/system/download/');
+define('DIR_UPLOAD', '/var/www/html/zotamall/system/upload/');
+define('DIR_LOGS', '/var/www/html/zotamall/system/logs/');
+define('DIR_MODIFICATION', '/var/www/html/zotamall/system/modification/');
+define('DIR_CATALOG', '/var/www/html/zotamall/');
 
 // DB
 define('DB_DRIVER', 'mysqli');

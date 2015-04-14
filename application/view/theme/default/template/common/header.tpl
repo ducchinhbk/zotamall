@@ -18,8 +18,11 @@
             </ul>
         </div><!--End-nav-foodpanda-->
         <ul class="header-links">
-            <?php if(!empty($name) && !empty($email) && !empty($image)){ ?>
-                <img src="<?php echo $image?>" />&nbsp; <?php echo $name; ?>
+            <?php if(isset($name) && isset($email) && isset($image)){ ?>
+                <img src="<?php echo $image?>" />&nbsp; <?php echo $name; ?>&nbsp;&nbsp;
+                <a href="<?php echo $logout?>">
+                    <img style="width:30px" src="https://cdn0.iconfinder.com/data/icons/large-glossy-icons/512/Logout.png">
+                </a>
             <?php }else{ ?>
                 <li class="customer-account"><a href="#" class="btn btn-default customer-login js-auth-login">Đăng nhập</a></li>
             <?php } ?>
