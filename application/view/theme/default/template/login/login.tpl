@@ -50,7 +50,12 @@
             </div>
             <div class="unit social-column">
                 <div class="social-inner">
-                    <div class="fb-wrapper ui-no-google"> <a id="facebook-login-button" href="javascript:;" class="fb-auth inner" onclick="loginByFacebookAccount(this, '/customer/account/loginFacebook?referer=%2Fdong-ho-nam-day-thep-khong-gi-eyki-eov8568-bac-100539.html'); return false;"> <i class="icon icon-fb-social icon-fb-small-social"></i> <span>Facebook</span> </a> </div>
+                    <div class="fb-wrapper ui-no-google">
+                        <a id="facebook-login-button" href="<?php echo $linkLoginFacebook?>" class="fb-auth inner">
+                            <i class="icon icon-fb-social icon-fb-small-social"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

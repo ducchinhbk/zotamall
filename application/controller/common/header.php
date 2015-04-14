@@ -21,7 +21,7 @@ class ControllerCommonHeader extends Controller {
         $data['daily'] = $this->url->link('product/daily');
 
         if(isset($param['name'])){
-            $data['name'] = $param['name'];
+            $data['customer_name'] = $param['name'];
         }
         if(isset($param['email'])){
             $data['email'] = $param['email'];

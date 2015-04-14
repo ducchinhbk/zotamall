@@ -19,7 +19,7 @@
         </div><!--End-nav-foodpanda-->
         <ul class="header-links">
             <?php if(isset($name) && isset($email) && isset($image)){ ?>
-                <img src="<?php echo $image?>" />&nbsp; <?php echo $name; ?>&nbsp;&nbsp;
+                <img src="<?php echo $image?>" />&nbsp; <?php echo $customer_name; ?>&nbsp;&nbsp;
                 <a href="<?php echo $logout?>">
                     <img style="width:30px" src="https://cdn0.iconfinder.com/data/icons/large-glossy-icons/512/Logout.png">
                 </a>
