@@ -1,19 +1,19 @@
 <?php
-require_once(DIR_SYSTEM . 'library/facebook/FaceBookSession.php');
-require_once(DIR_SYSTEM . 'library/facebook/FacebookRequest.php');
-require_once(DIR_SYSTEM . 'library/facebook/FacebookResponse.php');
-require_once(DIR_SYSTEM . 'library/facebook/FacebookSDKException.php');
-require_once(DIR_SYSTEM . 'library/facebook/FacebookRequestException.php');
-require_once(DIR_SYSTEM . 'library/facebook/FacebookRedirectLoginHelper.php');
-require_once(DIR_SYSTEM . 'library/facebook/FacebookAuthorizationException.php');
-require_once(DIR_SYSTEM . 'library/facebook/GraphObject.php');
-require_once(DIR_SYSTEM . 'library/facebook/GraphUser.php');
-require_once(DIR_SYSTEM . 'library/facebook/GraphAlbum.php');
-require_once(DIR_SYSTEM . 'library/facebook/GraphSessionInfo.php');
-require_once(DIR_SYSTEM . 'library/facebook/Entities/AccessToken.php');
-require_once(DIR_SYSTEM . 'library/facebook/HttpClients/FacebookCurl.php');
-require_once(DIR_SYSTEM . 'library/facebook/HttpClients/FacebookHttpable.php');
-require_once(DIR_SYSTEM . 'library/facebook/HttpClients/FacebookCurlHttpClient.php');
+require_once(DIR_SYSTEM . 'library/Facebook/FaceBookSession.php');
+require_once(DIR_SYSTEM . 'library/Facebook/FacebookRequest.php');
+require_once(DIR_SYSTEM . 'library/Facebook/FacebookResponse.php');
+require_once(DIR_SYSTEM . 'library/Facebook/FacebookSDKException.php');
+require_once(DIR_SYSTEM . 'library/Facebook/FacebookRequestException.php');
+require_once(DIR_SYSTEM . 'library/Facebook/FacebookRedirectLoginHelper.php');
+require_once(DIR_SYSTEM . 'library/Facebook/FacebookAuthorizationException.php');
+require_once(DIR_SYSTEM . 'library/Facebook/GraphObject.php');
+require_once(DIR_SYSTEM . 'library/Facebook/GraphUser.php');
+require_once(DIR_SYSTEM . 'library/Facebook/GraphAlbum.php');
+require_once(DIR_SYSTEM . 'library/Facebook/GraphSessionInfo.php');
+require_once(DIR_SYSTEM . 'library/Facebook/Entities/AccessToken.php');
+require_once(DIR_SYSTEM . 'library/Facebook/HttpClients/FacebookCurl.php');
+require_once(DIR_SYSTEM . 'library/Facebook/HttpClients/FacebookHttpable.php');
+require_once(DIR_SYSTEM . 'library/Facebook/HttpClients/FacebookCurlHttpClient.php');
 
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
