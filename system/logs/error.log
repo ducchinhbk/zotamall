@@ -242,3 +242,15 @@
 2015-04-09 11:33:24 - PHP Notice:  Undefined variable: action in /var/www/html/zotamall/zadmin/view/template/catalog/product_dn_form.tpl on line 27
 2015-04-09 19:05:07 - PHP Notice:  Undefined variable: header in D:\xampp\htdocs\zotamall\application\view\theme\default\template\product\dailydeal.tpl on line 497
 2015-04-09 19:05:07 - PHP Notice:  Undefined variable: footer in D:\xampp\htdocs\zotamall\application\view\theme\default\template\product\dailydeal.tpl on line 901
+2015-04-11 18:28:50 - PHP Notice:  A session had already been started - ignoring session_start() in D:\xampp\htdocs\zotamall\application\controller\facebook\facebook.php on line 34
+2015-04-11 19:49:33 - PHP Notice:  Undefined variable: name in D:\xampp\htdocs\zotamall\application\controller\common\home.php on line 66
+2015-04-11 19:50:23 - PHP Notice:  Undefined variable: name in D:\xampp\htdocs\zotamall\application\controller\common\home.php on line 66
+2015-04-13 19:31:51 - PHP Notice:  Undefined variable: linkLoginFacebook in D:\xampp\htdocs\zotamall\application\view\theme\default\template\login\login.tpl on line 343
+2015-04-13 20:48:06 - PHP Notice:  Undefined index: name in D:\xampp\htdocs\zotamall\application\controller\common\header.php on line 22
+2015-04-13 20:48:06 - PHP Notice:  Undefined index: email in D:\xampp\htdocs\zotamall\application\controller\common\header.php on line 23
+2015-04-13 20:48:06 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\zotamall\application\controller\common\header.php on line 24
+2015-04-13 20:48:45 - PHP Notice:  Undefined index: name in D:\xampp\htdocs\zotamall\application\controller\common\header.php on line 22
+2015-04-13 20:48:45 - PHP Notice:  Undefined index: email in D:\xampp\htdocs\zotamall\application\controller\common\header.php on line 23
+2015-04-13 20:48:45 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\zotamall\application\controller\common\header.php on line 24
+2015-04-13 21:53:57 - PHP Notice:  Array to string conversion in D:\xampp\htdocs\zotamall\system\engine\action.php on line 12
+2015-04-13 21:53:57 - PHP Unknown:  Object of class Action could not be converted to string in D:\xampp\htdocs\zotamall\application\view\theme\default\template\common\home.tpl on line 28

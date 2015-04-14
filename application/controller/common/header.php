@@ -17,6 +17,26 @@ class ControllerCommonHeader extends Controller {
 		$data['scripts'] = $this->document->getScripts();
 		$data['lang'] = $this->language->get('code');
 		$data['direction'] = $this->language->get('direction');
+        $data['shock'] = $this->url->link('product/shock');
+        $data['daily'] = $this->url->link('product/daily');
+
+        if(isset($this->request->get['name'])){
+            $data['name'] = $this->request->get['name'];
+        }else{
+            $data['name'] = '';
+        }
+
+        if(isset($this->request->get['email'])){
+            $data['email'] = $this->request->get['email'];
+        }else{
+            $data['email'] = '';
+        }
+
+        if(isset($this->request->get['image'])){
+            $data['image'] = $this->request->get['image'];
+        }else{
+            $data['image'] = '';
+        }
 
 		if ($this->config->get('config_google_analytics_status')) {
 			$data['google_analytics'] = html_entity_decode($this->config->get('config_google_analytics'), ENT_QUOTES, 'UTF-8');

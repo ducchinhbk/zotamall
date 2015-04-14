@@ -7,10 +7,10 @@
                     <a href="/<?php echo DIR_ROOT_NAME; ?>">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="index.php?route=product/shock">Deal sốc</a>
+                    <a href="<?php echo $shock?>">Deal sốc</a>
                 </li>
                 <li>
-                    <a href="index.php?route=product/daily">Daily deal</a>
+                    <a href="<?php echo $daily?>">Daily deal</a>
                 </li>
                 <li>
                     <a href="http://www.zotadi.com/" target="_blank">Du lịch</a>
@@ -18,7 +18,11 @@
             </ul>
         </div><!--End-nav-foodpanda-->
         <ul class="header-links">
-            <li class="customer-account"><a href="#" class="btn btn-default customer-login js-auth-login">Đăng nhập</a></li>
+            <?php if(!empty($name) && !empty($email) && !empty($image)){ ?>
+                <img src="<?php echo $image?>" />&nbsp; <?php echo $name; ?>
+            <?php }else{ ?>
+                <li class="customer-account"><a href="#" class="btn btn-default customer-login js-auth-login">Đăng nhập</a></li>
+            <?php } ?>
         </ul>
     </div>
 </header>
