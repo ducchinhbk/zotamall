@@ -16,19 +16,22 @@
                     <a href="http://www.zotadi.com/" target="_blank">Du lịch</a>
                 </li>
             </ul>
-        </div><!--End-nav-foodpanda-->
+        </div>
         <ul class="header-links">
             <?php if(isset($name) && isset($email) && isset($image)){ ?>
                 <li class="profile_li">
-                    <a href="javascript:void(0)" onclick="toggleProfileUser();">
+                    <a href="javascript:void(0)" id="userContainer">
                         <img src="<?php echo $image?>" />&nbsp; <?php echo $customer_name; ?>&nbsp;&nbsp;
                     </a>
                     <a href="<?php echo $logout?>">
                         <img style="width:30px" src="https://cdn0.iconfinder.com/data/icons/large-glossy-icons/512/Logout.png">
                     </a>
-                    <ul id="toggleProfileUserUL" style="display: none">
-                        <li>Profile</li>
-                        <li>Cart</li>
+                    <ul id="toggleProfileUserUL">
+                        <li>
+                            <a href="<?php echo $userSetting; ?>">Tài khoản của tôi <i class="fa fa-user"></i></a>
+                        </li>
+                        <li><a href="<?php echo $userCart; ?>">Giỏ hàng của tôi <i class="fa fa-shopping-cart"></i></a>
+                        </li>
                     </ul>
                 </li>
             <?php }else{ ?>
@@ -52,7 +55,14 @@
     </div>
 </div>
 <script type="text/javascript">
-    function toggleProfileUser(){
-        $('#toggleProfileUserUL').toggle();
-    }
+    $(document).ready(function(){
+        $('html').click(function() {
+            $('#toggleProfileUserUL').hide();
+        });
+
+        $('#userContainer').click(function(event){
+            event.stopPropagation();
+            $('#toggleProfileUserUL').toggle();
+        });
+    });
 </script>

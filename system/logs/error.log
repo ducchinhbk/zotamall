@@ -374,3 +374,61 @@
 2015-04-14 17:44:46 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
                     name = 'Robert Cuong'
                     image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 1 in D:\xampp\htdocs\zotamall\system\library\db\mysqli.php on line 40
+2015-04-15 3:22:19 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-15 3:23:28 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-16 3:54:36 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-16 4:10:19 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-16 6:19:08 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-16 6:27:36 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:27:36 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:28:16 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:28:16 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:28:21 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:28:21 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:28:26 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:28:26 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:40:33 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:40:33 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:40:44 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:40:44 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:42:55 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:42:55 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:43:43 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:43:43 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:43:59 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:43:59 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 6:44:06 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 6:44:06 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 8:12:50 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-16 8:12:50 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 8:12:50 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 8:13:20 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 8:13:20 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 8:13:30 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 8:13:30 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 8:46:56 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-16 8:46:56 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 8:46:56 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 8:47:17 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 8:47:17 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 8:47:19 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 8:47:19 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33
+2015-04-16 9:59:11 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE cust' at line 3<br />Error No: 1064<br />UPDATE `customer` SET
+                    name = 'Robert Cuong'
+                    image = 'https://graph.facebook.com/819276394825557/picture?width=30' WHERE customer_id = 6 in /var/www/html/zotamall/system/library/db/mysqli.php on line 40
+2015-04-16 9:59:11 - PHP Notice:  Undefined variable: userSetting in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 31
+2015-04-16 9:59:11 - PHP Notice:  Undefined variable: userCart in /var/www/html/zotamall/application/view/theme/default/template/common/header.tpl on line 33

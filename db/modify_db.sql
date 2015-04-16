@@ -46,3 +46,10 @@ CREATE TABLE IF NOT EXISTS `product_dn_to_customer` (
 ALTER TABLE `customer` ADD (
   `image` varchar(100)
 );
+
+ALTER TABLE `product` ADD (
+   `catalog_id_path` varchar(100),
+   `catalog_name_path` varchar(100),
+   `type` varchar(10),
+   `isPromotionProduct` int(1)
+);

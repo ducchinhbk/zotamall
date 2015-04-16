@@ -8,6 +8,7 @@
     <link href="<?php echo DIR_APP_NAME ?>/view/stylesheet/style.css" rel="stylesheet" media="screen">
     <link href="<?php echo DIR_APP_NAME ?>/view/stylesheet/dailydeal.css" rel="stylesheet">
     <link href="<?php echo DIR_APP_NAME ?>/view/stylesheet/dkdn.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <script src="<?php echo DIR_APP_NAME ?>/view/javascript/jquery-1.9.1.min.js"></script>
     <script src="<?php echo DIR_APP_NAME ?>/view/javascript/bootstrap.min.js"></script>
