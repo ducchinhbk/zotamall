@@ -443,15 +443,15 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 .reg-form .form-group input.error{border:1px solid #dd4b39;}
 .reg-form .form-group.button p{font-size:11px;float: left;}
 .reg-social h2, .reg-form h2{font-size:16px; margin:16px 0 0;}
-.reg-social a.btn{color:#FFF; height:50px; width:280px; margin:20px 0 0; line-height:50px; cursor:pointer; text-align:left; padding:0;}
+.reg-social a.btn{color:#FFF; height:40px; width:280px; margin:20px 0 0; line-height:40px; cursor:pointer; text-align:left; padding:0;border-radius:0;}
 .reg-social a.btn:hover{opacity:0.9;}
 .reg-social a.btn-facebook{background-color:#1457BA;}
 .reg-social a.btn-google{background-color:#E15D5D;}
-.reg-social a.btn i{display: block;float: left;font-size: 28px;height: 48px;line-height: 50px; width: 50px; text-align:center; margin-right:15px;}
+.reg-social a.btn i{display: block;float: left;font-size: 28px; height: 40px; line-height: 40px; width: 50px; text-align:center; margin-right:15px;}
 .reg-social a.btn-facebook i{background-color:#084bae;}
 .reg-social a.btn-google i{background-color:#d45050; }
 .popupbot{ text-align:center; line-height:56px;font-size: 18px;}
-#registered .reg-social a.btn{width:100%;}
+#registered .reg-social a.btn{width:75%;}
 #registered .reg-social a.btn-google, #registered .reg-social a.btn-facebook{font-size:12px;}
 .reg-recaptcha{border:1px solid #ccc; border-radius: 4px;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;padding: 12px; }
 .reg-recaptcha #recaptcha_response_field{border:1px solid #ccc; margin-top:5px; width:100%;}

@@ -19,7 +19,7 @@
 									</div>
 									<div class="form-group">
 										<label for="password">Mật khẩu</label>
-										<input id="password" name="password" value="<?php echo $password; ?>" class="form-control" type="password"/>
+										<input id="password" name="password" value="" class="form-control" type="password"/>
 									</div>
 									<div class="form-group remember">
 										<?php if ($error_warning) { ?>

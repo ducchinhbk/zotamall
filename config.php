@@ -6,7 +6,7 @@ define('HTTP_SERVER', 'http://localhost/saleoff/');
 define('HTTPS_SERVER', 'https://localhost/saleoff/');
 
 //ROOT DIR
-define('ROOT_DIR', 'E:/xampp1.8/htdocs/saleoff');
+define('ROOT_DIR', 'C:/xampp5.6/htdocs/saleoff');
 
 // DIR
 define('DIR_APPLICATION', ROOT_DIR.'/catalog/');

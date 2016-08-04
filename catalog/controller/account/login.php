@@ -4,12 +4,6 @@ require DIR_FACEBOOK.'/autoload.php';
 class ControllerAccountLogin extends Controller {
 	private $error = array();
 	
-	public function __construct()
-    {
-        $this->_registry = $registry;
-        $this->config($config);
-    }
-	
 	public function index() {
 		
 		if ($this->customer->isLogged()) {
@@ -57,8 +51,8 @@ class ControllerAccountLogin extends Controller {
 		}
 		//facebook login setup
 		$fb = new Facebook\Facebook([
-		  'app_id' => '{app-id}',
-		  'app_secret' => '{app-secret}',
+		  'app_id' => '{189952838014491}',
+		  'app_secret' => '{4112151381263a557fa64a8f92f8dbe2}',
 		  'default_graph_version' => 'v2.5',
 		]);
 		$helper = $fb->getRedirectLoginHelper();
@@ -142,30 +136,28 @@ class ControllerAccountLogin extends Controller {
 	protected function fblogin(){
 		# login-callback.php
 		$fb = new Facebook\Facebook([
-		  'app_id' => '{app-id}',
-		  'app_secret' => '{app-secret}',
+		  'app_id' => '{189952838014491}',
+		  'app_secret' => '{4112151381263a557fa64a8f92f8dbe2}',
 		  'default_graph_version' => 'v2.5',
-		]););
+		]);
 
 		$helper = $fb->getRedirectLoginHelper();
 		try {
 		  $accessToken = $helper->getAccessToken();
 		} catch(Facebook\Exceptions\FacebookResponseException $e) {
 		  // When Graph returns an error
-		  echo 'Graph returned an error: ' . $e->getMessage();
+		  echo 'Login facebook error: ' . $e->getMessage();
 		  exit;
 		} catch(Facebook\Exceptions\FacebookSDKException $e) {
 		  // When validation fails or other local issues
-		  echo 'Facebook SDK returned an error: ' . $e->getMessage();
+		  echo 'Login facebook error: ' . $e->getMessage();
 		  exit;
 		}
 
 		if (isset($accessToken)) {
-		  // Logged in!
-		  $_SESSION['facebook_access_token'] = (string) $accessToken;
-
-		  // Now you can redirect to another page and use the
-		  // access token from $_SESSION['facebook_access_token']
+		  // to do here
+			echo 'Login facebook successfull';
+			exit;
 		}
 	}
 }
