@@ -1,0 +1,46 @@
+/* CSS Document */
+.about-home{  
+	background-color: #fff;
+    padding-bottom: 30px;
+}
+.about-cover{background:rgba(0, 0, 0, 0) url(../img/about-cover.jpg) no-repeat scroll center center / cover; height:460px;}
+
+.about-cover-o{background:rgba(0, 0, 0, 0) url(../img/about-cover.jpg) no-repeat scroll center center / cover; height:230px;}
+
+.brbox{background:url(../img/about-boder-box.png) no-repeat scroll top center #FFF; margin:0 0 20px; text-align:center;height:8px; width:100%;}
+.about-tagline .container{
+	background-color: #f0f0f0;
+	border-left: 5px solid #0068bb;
+	padding: 20px 30px;
+}
+.about-tagline h1{font-size:24px; font-weight:700; margin:0 0 10px;}
+.about-tagline span{color:#777;}
+.about-tagline .btn{float:right; margin-top:10px;}
+
+.about-box .about-box-head h3{font-size: 24px;font-weight: 700;}
+.about-box .about-box-head span{color:#777;}
+.about-box .box-content h4{margin:0 0 10px;}
+
+.about-features .col-md-4{margin-bottom:55px;}
+.about-features .box-icon{display:block; width:64px; height:64px; float:left;border-radius:40px; background:#5cb85c; color:#FFF; font-size:24px; line-height:64px; text-align:center; padding:17px 0; margin:7px 15px 20px 0;}
+
+.about-service .col-md-4{text-align:center; margin-bottom:35px;}
+.about-service .number{color:#0068bb; font-size:46px;}
+.about-service .box-content h4{margin:20px 0 35px; font-size:28px;}
+.about-service .box-content img{margin:0 0 10px;}
+
+.about-partner h3{background:url(../img/b.png) repeat scroll 0 0 #FFF; padding: 12px 0;}
+.about-readmore{background:url(../img/f.png) repeat scroll 0 0 #FFF; padding: 12px 0;}
+
+.about-pathway{background-color:#FCFCFC; border-bottom:1px solid #f2f2f2;}
+.about-pathway ul li{background:url(../img/p.png) no-repeat scroll center right; float:left; padding: 8px 15px 8px 5px;}
+.about-pathway ul li:first-child{ padding: 8px 15px 8px 0;}
+.about-pathway ul li a{font-size:12px;}
+.about-main{min-height:500px;}
+
+.about-menu li ul{margin-top:10px;}
+.about-menu li li{list-style:inside; border-top: 1px solid #ddd; padding: 10px 0;}
+
+.about-right h1{margin:0 0 20px; font-size:24px; font-weight:700;}
+.us-content{text-align:justify;}
+.us-content img{display:block; margin:15px auto; max-width:100%; border:1px solid #ddd;}

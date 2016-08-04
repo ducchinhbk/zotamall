@@ -1,0 +1,5 @@
+/* CSS Document */
+#header{background:url("../img/h.jpg") repeat-x 0 bottom #FFFFFF; border-bottom:1px solid #ddd;}
+#home{background:url("../img/m.png?v=3") repeat-y scroll top center rgba(0, 0, 0, 0);}
+#eventdetail #mainevent{background:url("../img/m.png?v=3") repeat-y scroll top center rgba(0, 0, 0, 0);}
+
