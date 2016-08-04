@@ -51,13 +51,14 @@ class ControllerAccountLogin extends Controller {
 		}
 		//facebook login setup
 		$fb = new Facebook\Facebook([
-		  'app_id' => '{189952838014491}',
-		  'app_secret' => '{4112151381263a557fa64a8f92f8dbe2}',
+		  'app_id' => '189952838014491',
+		  'app_secret' => '4112151381263a557fa64a8f92f8dbe2',
 		  'default_graph_version' => 'v2.5',
 		]);
 		$helper = $fb->getRedirectLoginHelper();
 		$permissions = ['email', 'user_likes']; // optional
-		$loginUrl = $helper->getLoginUrl('account/login/fblogin', $permissions);
+		$callBack = $this->url->custom_link('account/login/fblogin');
+		$loginUrl = $helper->getLoginUrl($callBack, $permissions);
 		$data['fbLogin'] = $loginUrl;
 		
 		if (isset($this->session->data['error'])) {
@@ -133,11 +134,14 @@ class ControllerAccountLogin extends Controller {
 		return !$this->error;
 	}
 	
-	protected function fblogin(){
-		# login-callback.php
+	public function fblogin(){
+		if (!isset($this->request->get['code'])) {
+			$this->response->redirect($this->url->home_url());
+		}
+		
 		$fb = new Facebook\Facebook([
-		  'app_id' => '{189952838014491}',
-		  'app_secret' => '{4112151381263a557fa64a8f92f8dbe2}',
+		  'app_id' => '189952838014491',
+		  'app_secret' => '4112151381263a557fa64a8f92f8dbe2',
 		  'default_graph_version' => 'v2.5',
 		]);
 
