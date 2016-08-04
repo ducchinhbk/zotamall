@@ -179,8 +179,10 @@
 							<a href="#">Văn hóa &amp; Giải trí</a>																				
 						</span>
 						<span class="date">
-							Từ <strong itemprop="startDate" content="2016-07-01T20:00">20:00 Ngày 01/07/2016 </strong> 
-							Đến <strong itemprop="endDate" content="2016-07-02T23:00">23:00 Ngày 02/07/2016 </strong>
+							Bắt đầu : <strong itemprop="startDate" content="2016-07-01T20:00">20:00 | 01-07-2016 </strong> 
+						</span>
+						<span class="date">
+							Kết thúc : <strong itemprop="endDate" content="2016-07-02T23:00">23:00 | 02-07-2016 </strong>
 						</span>
 						<span class="local">
 							<i class="fa fa-map-marker"></i>Nhà hát Thành phố, Ho Chi Minh City, Ho Chi Minh, Vietnam													
