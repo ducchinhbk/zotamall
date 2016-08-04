@@ -27,8 +27,34 @@
 	<div id="mainevent">
 		<div class="container" style="position: relative">
 			<div class="sidebar hidden-sm hidden-xs">
+				<div class="event-organ full-100">
+					<h4>Viện Pháp tại TP Hồ Chí Minh</h4>
+					<ul class="event-info-key mgt15">
+						<li class="namekey">
+							<label>Thời gian:</label>
+							<span>Từ <strong>20:00 Ngày 01/07/2016 </strong> 
+								Đến <strong>23:00 Ngày 02/07/2016 </strong>
+							</span>
+						</li>
+						<li class="addskey">
+							<label>Địa điểm:</label>
+							<span>Nhà hát Thành phố, Ho Chi Minh City, Ho Chi Minh, Vietnam</span>
+						</li>
+						<li class="catekey">
+							<label>Danh mục:</label>
+							<span><a href="#">Văn hóa &amp; Giải trí</a></span>
+						</li>
+						<li class="phonekey">
+							<label>Hotline:</label>
+							<span>09 32 01 54 54</span>
+						</li>
+						<li class="emailkey">
+							<label>Email:</label>
+							<span>carmen@lysevents.com</span>
+						</li>
+					</ul>
+				</div>
 				<div class="event-info full-100">
-					<h3 class="sidebarst1">Thông tin liên hệ</h3>
 					<input type="hidden" id="event_latitude" value="10.851644">
 					<input type="hidden" id="event_longitude" value="106.660675">
 					<div class="event-maps">
@@ -56,45 +82,9 @@
 					}
 					</script>
 					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzzE_zON49mpNwFjeFT8WnOznyNXs70YQ&callback=initAutocomplete" async defer></script>
-
-					<h2><a href="javascript:;" class="clskh fontsize16"><span itemprop="name">Vở kịch opéra Carmen của Georges Bizet</span></a></h2>
-
-
-					<ul class="event-info-key mgt15">
-						<li class="namekey">
-							<label>Thời gian:</label>
-							<span>Từ <strong>20:00 Ngày 01/07/2016 </strong> 
-								Đến <strong>23:00 Ngày 02/07/2016 </strong>
-							</span>
-						</li>
-						<li class="addskey">
-							<label>Địa điểm:</label>
-							<span>Nhà hát Thành phố, Ho Chi Minh City, Ho Chi Minh, Vietnam</span>
-						</li>
-						<li class="catekey">
-							<label>Danh mục:</label>
-							<span><a href="#">Văn hóa &amp; Giải trí</a></span>
-						</li>
-						<li class="phonekey">
-							<label>Hotline:</label>
-							<span>09 32 01 54 54</span>
-						</li>
-						<li class="emailkey">
-							<label>Email:</label>
-							<span>carmen@lysevents.com</span>
-						</li>
-					</ul>
-					<div style="display:none;" itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
-						<span itemprop="lowPrice">50$</span>
-						<span itemprop="offerCount">1000</span>
-						<span itemprop="url">vo-kich-opera-carmen-cua-georges-bizet-1995567-2016.html</span>
-					</div>
+					
 				</div>
-				<div class="event-organ full-100">
-					<h3 class="sidebarst1">Đơn vị tổ chức</h3>
-					<h4>Viện Pháp tại TP Hồ Chí Minh</h4>
-					<hr class="ngat mgt10"/>
-				</div>
+				
 				
 				<div class="event-sponsor full-100">
 					<ul class="ads-vip">
@@ -186,11 +176,9 @@
 					</h1>
 					<div class="col-md-7 pdl0">
 						<span class="category">
-							<i class="fa fa-folder"></i>
-							<a href="event/search/type/sap-dien-ra/category/2">Văn hóa &amp; Giải trí</a>																				
+							<a href="#">Văn hóa &amp; Giải trí</a>																				
 						</span>
 						<span class="date">
-							<i class="fa fa-clock-o"></i>
 							Từ <strong itemprop="startDate" content="2016-07-01T20:00">20:00 Ngày 01/07/2016 </strong> 
 							Đến <strong itemprop="endDate" content="2016-07-02T23:00">23:00 Ngày 02/07/2016 </strong>
 						</span>
@@ -199,31 +187,20 @@
 							
 						</span>
 						<span class="user">
-							<i class="fa fa-user"></i>Đăng bởi: <a href="HeartSun" target="_blank"> Hieu Outliers</a>
+							Đăng bởi: <a href="HeartSun" target="_blank"> Hieu Outliers</a>
 						</span>
 					</div>
-					<div class="col-md-5 reviews text-right hidden-xs hidden-sm pdr00 pdl00">
+					<div class="col-md-5 reviews text-right hidden-xs hidden-sm pdr00 pdl00 ">
 						<div class="mgb20">
 							<div class="col-md-4 pdl00 pdr05" data-toggle="tooltip" title="Lượt xem">
 								<span class="invite"><i class="fa fa-eye"></i> 23</span>
 							</div>
 							<div class="col-md-5 pdl00 pdr00" data-toggle="tooltip" title="Đánh giá">
-								<span class="rate text-center">
+								<span class="rate">
 									<a id="event-review-link" href="javascript:void(0);">
 									<i class="fa fa-star" style="color:#ffd600;"></i> 0.0 | 0 đánh giá</a>
 								</span>
 							</div>
-							<div class="col-md-3 pdl00 pdr00" data-toggle="tooltip" title="Câu hỏi">
-								<span class="view">
-									<a id="event-comment-link" href="javascript:void(0);"><i class="fa fa-question-circle"></i> 0 câu hỏi</a>
-								</span>
-							</div>
-						</div>
-						<div class="mgt50">
-							<a id="send-message-btn" href="javascript:void(0);" class="btn btn-sm btn-default"  data-plugin="m.popup" data-content=".user-form-login-popup" data-hide-on-over-lay-click="true">
-								<i class="fa fa-fw fa-envelope"></i>Gửi tin nhắn
-							</a>
-							
 						</div>
 
 					</div>
