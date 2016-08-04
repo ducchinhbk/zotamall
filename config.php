@@ -21,6 +21,9 @@ define('DIR_LOGS', ROOT_DIR.'/system/storage/logs/');
 define('DIR_MODIFICATION', ROOT_DIR.'/system/storage/modification/');
 define('DIR_UPLOAD', ROOT_DIR.'/system/storage/upload/');
 
+//VENDOR
+define('DIR_FACEBOOK', ROOT_DIR.'/vendor/facebook/php-sdk-v4/src/Facebook');
+
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');

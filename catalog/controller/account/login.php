@@ -1,19 +1,25 @@
 <?php
+require DIR_FACEBOOK.'/autoload.php';
+
 class ControllerAccountLogin extends Controller {
 	private $error = array();
-
+	
+	public function __construct()
+    {
+        $this->_registry = $registry;
+        $this->config($config);
+    }
+	
 	public function index() {
-		$this->load->model('account/customer');
-
-		//var_dump($this->customer->isLogged()); exit;
+		
 		if ($this->customer->isLogged()) {
 			$this->response->redirect($this->url->custom_link('account/account'));
 		}
-
+		
 		$this->load->language('account/login');
-
 		$this->document->setTitle($this->language->get('heading_title'));
-
+		$this->load->model('account/customer');
+		
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			// Unset guest
 			unset($this->session->data['guest']);
@@ -49,12 +55,17 @@ class ControllerAccountLogin extends Controller {
 				$this->response->redirect($this->url->custom_link('account/account'));
 			}
 		}
-
-
-		$data['heading_title'] = $this->language->get('heading_title');
-
+		//facebook login setup
+		$fb = new Facebook\Facebook([
+		  'app_id' => '{app-id}',
+		  'app_secret' => '{app-secret}',
+		  'default_graph_version' => 'v2.5',
+		]);
+		$helper = $fb->getRedirectLoginHelper();
+		$permissions = ['email', 'user_likes']; // optional
+		$loginUrl = $helper->getLoginUrl('account/login/fblogin', $permissions);
+		$data['fbLogin'] = $loginUrl;
 		
-
 		if (isset($this->session->data['error'])) {
 			$data['error_warning'] = $this->session->data['error'];
 
@@ -94,12 +105,6 @@ class ControllerAccountLogin extends Controller {
 			$data['email'] = '';
 		}
 
-		if (isset($this->request->post['password'])) {
-			$data['password'] = $this->request->post['password'];
-		} else {
-			$data['password'] = '';
-		}
-
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 
@@ -132,5 +137,35 @@ class ControllerAccountLogin extends Controller {
 		}
 
 		return !$this->error;
+	}
+	
+	protected function fblogin(){
+		# login-callback.php
+		$fb = new Facebook\Facebook([
+		  'app_id' => '{app-id}',
+		  'app_secret' => '{app-secret}',
+		  'default_graph_version' => 'v2.5',
+		]););
+
+		$helper = $fb->getRedirectLoginHelper();
+		try {
+		  $accessToken = $helper->getAccessToken();
+		} catch(Facebook\Exceptions\FacebookResponseException $e) {
+		  // When Graph returns an error
+		  echo 'Graph returned an error: ' . $e->getMessage();
+		  exit;
+		} catch(Facebook\Exceptions\FacebookSDKException $e) {
+		  // When validation fails or other local issues
+		  echo 'Facebook SDK returned an error: ' . $e->getMessage();
+		  exit;
+		}
+
+		if (isset($accessToken)) {
+		  // Logged in!
+		  $_SESSION['facebook_access_token'] = (string) $accessToken;
+
+		  // Now you can redirect to another page and use the
+		  // access token from $_SESSION['facebook_access_token']
+		}
 	}
 }

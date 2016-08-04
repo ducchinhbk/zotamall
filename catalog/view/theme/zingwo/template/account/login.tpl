@@ -37,7 +37,7 @@
 							</div>
 							<div class="col-md-5 reg-social pdl0">
 								<h2>Đăng nhập nhanh không cần đăng ký</h2>
-								<a href="user/login/facebook" class="btn btn-facebook"><i class="fa fa-facebook-square"></i> Đăng nhập với Facebook</a>
+								<a href="<?php echo $fbLogin ?>" class="btn btn-facebook"><i class="fa fa-facebook-square"></i> Đăng nhập với Facebook</a>
 								<a href="user/login/google" class="btn btn-google"><i class="fa fa-google-plus-square"></i> Đăng nhập với Google+</a>
 							</div>
 						</div>
