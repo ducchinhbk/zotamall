@@ -1,5 +1,5 @@
 /*** OVERWRITE BOOTSTRAP ***/
-body{background-color: rgb(245, 245, 245);}
+body{background-color: rgb(245, 245, 245);position: relative;}
 .btn-success{background: #5cb85c!important;}
 .require::after{
     content: " *";
@@ -275,7 +275,7 @@ span.navbar-info{color:#777777;}
 
 
 /* Event Detail*/
-#eventdetail{border-top:1px solid #eee; background-color:#F5F5F5;}
+#eventdetail{border-top:1px solid #eee; background-color:#FFF;}
 #eventdetail #headevent{padding:15px 0 30px;}
 #eventdetail .content{background: #fff none repeat scroll 0 0;margin-right: 315px;overflow: hidden;padding: 0 10px 55px 10px;}
 #eventdetail .action span{
@@ -289,12 +289,12 @@ span.navbar-info{color:#777777;}
 }
 #eventdetail .action span i{display:block;text-align:center;width:100%; margin:0; font-size: 24px;}
 
-#eventdetail .sidebar{margin-top:15px;}
+#eventdetail .sidebar{margin-top:15px;background: #fff;}
 #eventdetail .content .coverevent{overflow:hidden; max-height:330px;}
 #eventdetail .content .coverevent img{}
 #eventdetail .title h1{font-size:24px; font-weight:700; margin-bottom:20px; line-height:30px; margin-top:0;}
 #eventdetail .title span{display: block;font-size: 14px;padding: 0;margin:0 0 7px 1px; color:#555555; width:100%;}
-#eventdetail .title span i{margin-right:10px;}
+#eventdetail .title span i{margin-right:5px;}
 #eventdetail .title span.local i{font-size:16px; padding:0 2px;}
 #eventdetail .title .reviews span{color:#0277bd;}
 #eventdetail .title .reviews i{color:#555555;font-size:14px;}
@@ -351,7 +351,7 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 .event-organ .col-md{text-align:center; font-size:11px;}
 .event-organ .col-md span{display:block; font-size:18px;}
 /* Tính năng MXH*/
-.action-e{border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding:2px 0 10px;}
+.action-e{border-top: 1px solid #ddd;padding:2px 0 10px;}
 .social-btn{display:block; float:left; margin-top:22px;}
 .social-google{margin-top:18px;}
 
@@ -383,7 +383,7 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 .event-comment .btn-sendquestion{position:absolute; right:10px; top:10px; z-index:100;}
 
 /*reviews*/
-.event-reviews .progress{margin-bottom:10px;}
+.event-reviews .progress{height: 15px; margin-bottom:10px; border-radius: 0;}
 .event-reviews ul li{margin-top:20px;}
 .event-reviews ul li .icon{width:42px; height:42px; float:left;}
 .event-reviews ul li .reviews {margin-left:60px;}
@@ -407,9 +407,9 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 #event-related .control.ctnext {margin-right: -18px;right: 0;}
 #event-related li{float: left;}
 
-#event-sponser{margin-top:15px;}
+#event-sponser{margin-top:20px;}
 #event-sponser h3.box-title{font-size:18px; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:7px 0;}
-#event-sponser li{width:100%; float:left; margin-bottom:10px;padding-bottom:10px; border-bottom:1px dotted #ccc;}
+#event-sponser li{width:100%; float:left; margin-bottom:10px;padding-bottom:10px;}
 #event-sponser a.event-avatar{max-height:72px; overflow:hidden; display:block; border:1px solid #ddd;}
 #event-sponser .title h3{font-size:16px; height:35px; overflow: hidden; font-size:12px; margin:0 0 5px; font-weight:700; line-height: 150%;}
 #event-sponser .title span{font-size:12px; margin:0 0 3px;}
@@ -461,6 +461,7 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 .es-top{padding:15px 0; border-bottom:1px solid #EEE;}
 .es-top .badge{background-color:#f5f5f5; border:1px solid #DDD; color:#777; padding: 4px 10px; font-weight:normal;}
 .es-top .badge span{padding-left: 4px;}
+.es-top .badge i{margin-left: 5px;}
 .es-top .badge i:hover{cursor:pointer; color:#D85F5C;}
 .es-bot, .ec-bot, .acc-bot{background-color:#F5F5F5;}
 
@@ -770,6 +771,7 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 .search-form {
     border: 3px solid rgba(0,0,0,.06);
 }
+.search-form .fa-search{font-size: 20px;}
 .search-form .form-control {
     height: 54px;
     padding: 0 19px;
@@ -799,7 +801,6 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
     background-color: #fff;
     position: relative;
     height: 140px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
 }
 p.date, p.local{
 	font-size: 13px;
@@ -839,7 +840,7 @@ p.date, p.local{
     z-index: 22;
 }
 .home-search input{padding-left: 25px;}
-.headbox h2{font-size: 24px;margin-top: 0;}
+.headbox h2{font-size: 24px;margin-top: 20px;}
 #pf-detail{border-top: 1px solid #ddd;}
 .pf-place{
     width: 160px;
@@ -961,7 +962,7 @@ p.date, p.local{
 .date-month {
     font-size: 9px;
     text-transform: uppercase;
-    background: #EB1212;
+    background: #E23732;
     color: #fff;
     font-weight: 700;
     height: 14px;
@@ -1141,4 +1142,42 @@ p.date, p.local{
 #target {
     width: 345px;
 }
+.event-organ h4{
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0;
+    font-weight: normal;
+}
+.place-block {
+    min-height: 80px;
+    margin: 5px 0;
+}
+.place-info .place-avatar{
+    float: left;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.place-info .place-detailsName{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #6a6a6a;
+    
+}
+.place-detailsLinks-info{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #eb1478;
+    cursor: pointer;
+}
+.place-detailsLinks-info:hover{
+    text-decoration: underline;
+}
+.gmnoprint, .gm-style-cc{display: none !important;}
+.lg-map-view{margin: 10px 0;}
+.lg-map-view a{color: #337ab7;}
 /***End Chinh CSS***/

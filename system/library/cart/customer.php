@@ -10,6 +10,7 @@ class Customer {
 	private $fax;
 	private $newsletter;
 	private $address_id;
+    private $image;
 
 	public function __construct($registry) {
 		$this->db = $registry->get('db');
@@ -23,6 +24,7 @@ class Customer {
 				$this->customer_id = $customer_query->row['customer_id'];
 				$this->firstname = $customer_query->row['firstname'];
 				$this->lastname = $customer_query->row['lastname'];
+                $this->image = $customer_query->row['image'];
 				$this->customer_group_id = $customer_query->row['customer_group_id'];
 				$this->email = $customer_query->row['email'];
 				$this->telephone = $customer_query->row['telephone'];
@@ -56,6 +58,7 @@ class Customer {
 			$this->customer_id = $customer_query->row['customer_id'];
 			$this->firstname = $customer_query->row['firstname'];
 			$this->lastname = $customer_query->row['lastname'];
+            $this->image = $customer_query->row['image'];
 			$this->customer_group_id = $customer_query->row['customer_group_id'];
 			$this->email = $customer_query->row['email'];
 			$this->telephone = $customer_query->row['telephone'];
@@ -83,6 +86,7 @@ class Customer {
 		$this->fax = '';
 		$this->newsletter = '';
 		$this->address_id = '';
+        $this->image = '';
 	}
 
 	public function isLogged() {
@@ -110,6 +114,10 @@ class Customer {
 
 	public function getEmail() {
 		return $this->email;
+	}
+    
+    public function getImage() {
+		return $this->image;
 	}
 
 	public function getTelephone() {

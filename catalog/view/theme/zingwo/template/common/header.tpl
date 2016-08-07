@@ -76,10 +76,10 @@
             </div>
             <div class="menutop search col-md-5 col-sm-5 navbar-search navbar-collapse collapse" id="navbar-search-input">
                 <div class="input-group input-group-search full-100">
-                    <form class="home-search" action="#" method="get">
+                    <form class="home-search" action="promotion/explore" method="get">
                         <span class="fa fa-search"></span>
-                        <input type="text" class="form-control" name="keysearch" placeholder="Nhập từ khóa tìm kiếm" value=""  minlength="3" maxlength="200" />
-                        
+                        <input type="text" class="form-control search-form-input" placeholder="Nhập từ khóa tìm kiếm" value=""  minlength="3" maxlength="200" />
+                        <input type="hidden" name="keyword"  value="" />
                     </form>
                 </div><!-- /input-group -->
             </div>

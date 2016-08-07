@@ -13,11 +13,14 @@ class ControllerPromotionExplore extends Controller {
         $this->document->addScript('catalog/view/javascript/calendar/bootstrap-datetimepicker.js');
         
         
-        $filter_name = $city = $category = $time = $type = null;
+        $keyword = $city = $category = $time = $type = null;
         $page = 1;
         $url = '';
-        if (isset($this->request->get['filter_name'])) {
-			$filter_name = $this->request->get['filter_name'];
+        $cityArr = $categoryArr = array('tat-ca');
+        $typeArr = array('tat-ca', 'noi-bat');
+        
+        if (isset($this->request->get['keyword'])) {
+			$keyword = $this->request->get['keyword'];
 		}
         
         if (isset($this->request->get['city'])) {
@@ -40,47 +43,23 @@ class ControllerPromotionExplore extends Controller {
 			$page = $this->request->get['page'];
 		}
 
-		if (isset($this->request->get['filter_name'])) {
-			$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
-		}
-        
-        /*if (isset($this->request->get['category'])) {
-			$url .= '&category=' . $this->request->get['category'];
-		}
-        if (isset($this->request->get['city'])) {
-			$url .= '&city=' . $this->request->get['city'];
-		}
-        
-        if (isset($this->request->get['category'])) {
-			$url .= '&category=' . $this->request->get['category'];
-		}
-        
-        if (isset($this->request->get['time'])) {
-			$url .= '&time=' . $this->request->get['time'];
-		}
-        
-        if (isset($this->request->get['type'])) {
-			$url .= '&type=' . $this->request->get['type'];
-		}
-        
-        if (isset($this->request->get['page'])) {
-			$url .= '&page=' . $this->request->get['page'];
-		} */
+		if (isset($this->request->get['keyword'])) {
+			$url .= '&keyword=' . urlencode(html_entity_decode($this->request->get['keyword'], ENT_QUOTES, 'UTF-8'));
+		  
+        }
         
         /***Get categories ***/
         $this->load->model('catalog/category');
         $data['categories'] = array();
         $data['activeCateName'] = $data['activeCateUrl'] = '';
         $results = $this->model_catalog_category->getCategories(0);
+        
         foreach ($results as $result) {
-            if (isset($this->request->get['category']) && $this->request->get['category'] == $result['link']) {
-    			$data['activeCateName'] = $result['name'];
-                $data['activeCateUrl'] = $result['link'];
-    		}
     		$data['categories'][] = array(
                 'name' => $result['name'],
                 'link' => $result['link'],
             );
+            array_push($categoryArr, $result['link']);
         } 
         
         /***Get city(zones)***/
@@ -88,16 +67,15 @@ class ControllerPromotionExplore extends Controller {
         $data['cities'] = array();
         $results = $this->model_catalog_zone->getZonesByParentId(0);
         foreach ($results as $result) {
-            
     		$data['cities'][] = array(
                 'name' => $result['name'] ,
                 'link' => $result['link'],
             );
+            array_push($cityArr, $result['link']);
         }
-		
-        
-        //$data['url'] = $this->url->custom_link('promotion/explore', $url);
-        
+		if (( $city != null && !in_array($city, $cityArr) ) || ($category != null && !in_array($category, $categoryArr)) || ($type != null && !in_array($type, $typeArr))) {
+			$this->response->redirect($this->url->custom_link('error/not_found'));
+		}
         
         /***Get promotions ***/
         $this->load->model('catalog/promotion');
@@ -105,7 +83,7 @@ class ControllerPromotionExplore extends Controller {
         
         $data['promotions'] = array();
         $filter_data = array(
-			'filter_name'	  => $filter_name,
+			'filter_name'	  => $keyword,
 			'type'            => $type,
             'time'            => $time,
             'category'       => $category,

@@ -48,9 +48,8 @@ class ControllerPromotionShop extends Controller {
     				'promotion_id' => $result['promotion_id'],
     				'image'        => $image,
     				'name'         => $result['name'],
-    				'start_time'   => $result['start_hour'].' | '.$result['start_date'],
-                    'end_time'     => $result['end_hour'].' | '. $result['end_date'],
-    				'address'      => $shop_info['address']. ', '. $shop_info['district']. ', '. $shop_info['city'],
+    				'dateOuput'  => convertDate($result['start_date'], $result['end_date']),
+    				'city'      => $shop_info['city'],
     				'action'       => $action,
                     'link'         => $this->url->custom_link($result['link'])
     			);

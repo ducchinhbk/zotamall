@@ -24,20 +24,85 @@ function str_replace(search, replace, str){
 	return sa ? str : str[0];
 }
 
-function redirect(old_param, new_param){
+function redirectUrl(old_param, new_param){
     var url  = window.location.href;
-    
-    if(old_param != ""){
+     
+    if(old_param != ''){
+        console.log('run here');
+        console.log(old_param);
+        console.log(new_param);
         redirect = str_replace(old_param, new_param, url);
     }
     else{
-        new_param = str_replace('&', '?', new_param) + '&';
-        redirect = str_replace('?', new_param, url);
+        if(url.indexOf('?') !== -1){
+            new_param = '&' + new_param;
+        }
+        else{
+            new_param = '?' + new_param;
+        }
+        
+        redirect = url + new_param;
     }
+    console.log(redirect);
     window.location = redirect;
 }
 
+function remove_vietnamese_accents(str)
+{
+	accents_arr= new Array(
+		"à","á","ạ","ả","ã","â","ầ","ấ","ậ","ẩ","ẫ","ă",
+		"ằ","ắ","ặ","ẳ","ẵ","è","é","ẹ","ẻ","ẽ","ê","ề",
+		"ế","ệ","ể","ễ",
+		"ì","í","ị","ỉ","ĩ",
+		"ò","ó","ọ","ỏ","õ","ô","ồ","ố","ộ","ổ","ỗ","ơ",
+		"ờ","ớ","ợ","ở","ỡ",
+		"ù","ú","ụ","ủ","ũ","ư","ừ","ứ","ự","ử","ữ",
+		"ỳ","ý","ỵ","ỷ","ỹ",
+		"đ",
+		"À","Á","Ạ","Ả","Ã","Â","Ầ","Ấ","Ậ","Ẩ","Ẫ","Ă",
+		"Ằ","Ắ","Ặ","Ẳ","Ẵ",
+		"È","É","Ẹ","Ẻ","Ẽ","Ê","Ề","Ế","Ệ","Ể","Ễ",
+		"Ì","Í","Ị","Ỉ","Ĩ",
+		"Ò","Ó","Ọ","Ỏ","Õ","Ô","Ồ","Ố","Ộ","Ổ","Ỗ","Ơ",
+		"Ờ","Ớ","Ợ","Ở","Ỡ",
+		"Ù","Ú","Ụ","Ủ","Ũ","Ư","Ừ","Ứ","Ự","Ử","Ữ",
+		"Ỳ","Ý","Ỵ","Ỷ","Ỹ",
+		"Đ"," ","\"","!","@","#","$","%","^","&","*","(",")",".",",",";","'","[","]","{","}"
+		,":","“","”","--",'.','>','<','--','---','‘','’','/','?','~',"|"
+	);
+ 
+	no_accents_arr= new Array(
+		"a","a","a","a","a","a","a","a","a","a","a",
+		"a","a","a","a","a","a",
+		"e","e","e","e","e","e","e","e","e","e","e",
+		"i","i","i","i","i",
+		"o","o","o","o","o","o","o","o","o","o","o","o",
+		"o","o","o","o","o",
+		"u","u","u","u","u","u","u","u","u","u","u",
+		"y","y","y","y","y",
+		"d",
+		"a","a","a","a","a","a","a","a","a","a","a","a",
+		"a","a","a","a","a",
+		"e","e","e","e","e","e","e","e","e","e","e",
+		"i","i","i","i","i",
+		"o","o","o","o","o","o","o","o","o","o","o","o",
+		"o","o","o","o","o",
+		"u","u","u","u","u","u","u","u","u","u","u",
+		"y","y","y","y","y",
+		"d","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-",
+		"-","-","-","-",'-','-','-','-','---','-','-','-','','',''
+	);
+    
+	return str_replace(accents_arr,no_accents_arr,str).toLowerCase();
+}
+
+
 jQuery(document).ready(function($){
+    
+    $(".search-form-input").keyup(function(){
+        $(":input[name='keyword']").val(str_replace(' ', '-', $(this).val())); 
+    });
+    
 	//=== Slideshow Home ==================================
     if ($("#md-slider-1").length) {
         $("#md-slider-1").mdSlider({

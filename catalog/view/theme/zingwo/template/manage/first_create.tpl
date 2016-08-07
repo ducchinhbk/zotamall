@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-sm-7">
-					<h1 class="ec-title mgb05">Tạo sự kiện mới </h1>
+					<h1 class="ec-title mgb05">Tạo khuyến mãi mới </h1>
 					<span class="ec-date">21:21 Ngày 24/06/2016 </span>
 				</div>
 				<!--div class="col-md-4 col-sm-5 text-right pdt45">

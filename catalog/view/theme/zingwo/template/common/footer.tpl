@@ -1,6 +1,6 @@
-  <div id="footer" class="full-100">
+  <div id="footer" class="clearfix">
     <div class="container">
-        <div class="row tags hidden-sm hidden-xs">
+        <div class="row tags hidden-sm hidden-xs mgt20">
             <div class="col-md-2 pdl0 about">
                 <h4>Giới thiệu</h4>
                 <ul class="full-100">
@@ -44,5 +44,6 @@
        
     </div>
 </div>
+
 </body>
 </html>

@@ -50,13 +50,13 @@ class ControllerAccountLogin extends Controller {
 			}
 		}
 		//facebook login setup
-		$fb = new Facebook\Facebook([
+		$fb = new Facebook\Facebook(array(
 		  'app_id' => '189952838014491',
 		  'app_secret' => '4112151381263a557fa64a8f92f8dbe2',
 		  'default_graph_version' => 'v2.5',
-		]);
+		));
 		$helper = $fb->getRedirectLoginHelper();
-		$permissions = ['email', 'user_likes']; // optional
+		$permissions = array('email', 'user_likes'); // optional
 		$callBack = $this->url->custom_link('account/login/fblogin');
 		$loginUrl = $helper->getLoginUrl($callBack, $permissions);
 		$data['fbLogin'] = $loginUrl;
@@ -85,19 +85,16 @@ class ControllerAccountLogin extends Controller {
 		} else {
 			$data['redirect'] = '';
 		}
-
+        
+        $data['email'] = '';
+        $data['success'] = '';
 		if (isset($this->session->data['success'])) {
 			$data['success'] = $this->session->data['success'];
-
 			unset($this->session->data['success']);
-		} else {
-			$data['success'] = '';
 		}
 
 		if (isset($this->request->post['email'])) {
 			$data['email'] = $this->request->post['email'];
-		} else {
-			$data['email'] = '';
 		}
 
 		$data['footer'] = $this->load->controller('common/footer');
@@ -138,12 +135,13 @@ class ControllerAccountLogin extends Controller {
 		if (!isset($this->request->get['code'])) {
 			$this->response->redirect($this->url->home_url());
 		}
-		
-		$fb = new Facebook\Facebook([
+		$this->load->model('account/customer');
+        
+		$fb = new Facebook\Facebook(array(
 		  'app_id' => '189952838014491',
 		  'app_secret' => '4112151381263a557fa64a8f92f8dbe2',
 		  'default_graph_version' => 'v2.5',
-		]);
+		));
 
 		$helper = $fb->getRedirectLoginHelper();
 		try {
@@ -160,8 +158,64 @@ class ControllerAccountLogin extends Controller {
 
 		if (isset($accessToken)) {
 		  // to do here
-			echo 'Login facebook successfull';
-			exit;
+            try {
+              $response = $fb->get('/me?fields=id,first_name,last_name,email', $accessToken);
+            } catch(Facebook\Exceptions\FacebookResponseException $e) {
+              // When Graph returns an error
+              echo 'Graph returned an error: ' . $e->getMessage();
+              exit;
+            } catch(Facebook\Exceptions\FacebookSDKException $e) {
+              // When validation fails or other local issues
+              echo 'Facebook SDK returned an error: ' . $e->getMessage();
+              exit;
+            }
+            $user = $response->getGraphUser();
+            
+            $img = file_get_contents('https://graph.facebook.com/'.$user->getField('id').'/picture?type=large');
+            $image = 'catalog/user/'.$user->getField('id').'.jpg';
+            if (!is_file(DIR_IMAGE . $image)) {
+                file_put_contents($image, $img);
+            }
+            
+            $customerData = array(
+                'email' => $user->getField('email'),
+                'first_name' => $user->getField('first_name'),
+                'last_name' => $user->getField('last_name'),
+                'image' => $image,
+                'password' => '@##!9fahf',
+            );
+            //set token for preventing CSRF
+            $token = token(32);
+            $this->session->data['token']  = $token;
+            setcookie('token', $token, time() + 60 * 60 * 24 * 30, '/', $this->request->server['HTTP_HOST']);
+            // Add to activity log
+			$this->load->model('account/activity');
+            
+            $customerInfo = $this->model_account_customer->getCustomerByEmail($customerData['email']);
+            if(!empty($customerInfo)){
+                $this->customer->login($customerInfo['email'], '', true);
+                
+                $activity_data = array(
+    				'customer_id' => $customerInfo['customer_id'],
+    				'name'        => $customerInfo['firstname'] . ' ' . $customerInfo['lastname']
+    			);
+    			$this->model_account_activity->addActivity('facebook_login', $activity_data);
+
+                $this->response->redirect($this->url->custom_link('account/account'));
+            }
+            
+            $customer_id = $this->model_account_customer->addCustomer($customerData);
+			$this->customer->login($customerData['email'], '', true);
+
+			unset($this->session->data['guest']);
+			$activity_data = array(
+				'customer_id' => $customer_id,
+				'name'        => $customerData['firstname'] . ' ' . $customerData['lastname']
+			);
+			$this->model_account_activity->addActivity('facebook_login', $activity_data);
+
+			$this->response->redirect($this->url->custom_link('account/account'));
+            
 		}
 	}
 }

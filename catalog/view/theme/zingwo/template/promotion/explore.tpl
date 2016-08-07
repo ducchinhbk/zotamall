@@ -3,17 +3,20 @@
     <div class="about-cover-o about-box full-100">
 		<div class="container">
 			<div class="header-container">
-				<h1 class="search-title hidden-sm hidden-xs">Thế giới sự kiện đặc sắc</h1>
+				<h1 class="search-title hidden-sm hidden-xs">Thiên đường khuyến mãi</h1>
 				<div class="w-100 clearfix">
+                    <form action="promotion/explore" method="get">
 					<div class="col-md-8 col-md-offset-2 clearfix padding-left-0 padding-right-0">
 						<div class="w-100 searcher">
 							<div class="input-group rounded search-form">
-								<input data-autocomplete="search" type="text" class="form-control" placeholder="Tìm sự kiện, khóa học, khu vui chơi..." aria-describedby="sizing-addon1" value="" tabindex="1" autocomplete="off">
+								<input type="text" class="form-control search-form-input" placeholder="Tìm sự kiện, khóa học, khu vui chơi..." tabindex="1" autocomplete="off"/>
 								<span tabindex="2" class="search-btn input-group-addon bg-white smooth-trans" data-search-click="true"><span class="fa fa-search"></span></span>
+                                <input type="hidden" name="keyword"  value="" />
 							</div>
 							<div class="search-res relative" data-search-result="true"><div class="autocomplete-suggestions" style="position: absolute; display: none; z-index: 9999;"></div></div>
 						</div>
 					</div>
+                    </form>
 				</div>
 			</div>
 		</div>
@@ -34,9 +37,9 @@
 							
 							<ul id="city_dropdown" class="dropdown-menu dropdown-menu-address">
                                 
-								<li class="lv2"><a data-link="tat-ca">Tất cả địa điểm</a></li>
+								<li class="lv2"><a data-city="tat-ca" id="city-tat-ca">Tất cả địa điểm</a></li>
                                 <?php foreach($cities as $city) {?>
-								<li class="lv2" ><a data-link="<?php echo $city['link']; ?>" ><?php echo $city['name']; ?></a></li>
+								<li class="lv2" ><a data-city="<?php echo $city['link']; ?>" id="city-<?php echo $city['link']; ?>"><?php echo $city['name']; ?></a></li>
                                 <?php } ?>
 							</ul>
 							</span>
@@ -49,10 +52,10 @@
 							<a href="#" class="dropdown-toggle em-bo" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 							Tất cả danh mục <i class="fa fa-angle-down"></i>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-category">
-								<li class="lv2"><a data-category="tat-ca">Tất cả danh mục</a></li>
+							<ul id="category_dropdown" class="dropdown-menu dropdown-menu-category">
+								<li class="lv2"><a data-category="tat-ca" id="category-tat-ca">Tất cả danh mục</a></li>
                                 <?php foreach($categories as $category) {?>
-								    <li class="lv2"><a data-category="<?php echo $category['link']; ?>"><?php echo $category['name']; ?></a></li>
+								    <li class="lv2"><a data-category="<?php echo $category['link']; ?>" id="category-<?php echo $category['link']; ?>"><?php echo $category['name']; ?></a></li>
                                 <?php } ?>
 								
 							</ul>
@@ -65,14 +68,15 @@
 							<a class="em-bo dropdown-time" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="event/search/">
 							Tất cả thời gian <i class="fa fa-angle-down"></i>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-time">
-								<li class="lv2"><a data-time="tat-ca">Tất cả thời gian</a></li>
-								<li class="lv2"><a data-time="sap-dien-ra">Sắp diễn ra</a></li>
-								<li class="lv2"><a data-time="moi-dang">Mới đăng</a></li>
-								<li class="lv2"><a data-time="dang-dien-ra">Đang diễn ra</a></li>
+							<ul id="time_dropdown" class="dropdown-menu dropdown-menu-time">
+								<li class="lv2"><a data-time="tat-ca" id="time-tat-ca">Tất cả thời gian</a></li>
+								<li class="lv2"><a data-time="sap-dien-ra" id="time-sap-dien-ra">Sắp diễn ra</a></li>
+								<li class="lv2"><a data-time="moi-dang" id="time-moi-dang">Mới đăng</a></li>
+								<li class="lv2"><a data-time="dang-dien-ra" id="time-dang-dien-ra">Đang diễn ra</a></li>
+                                
 								<li class="divider" role="separator"></li>
 								<li class="lv2">
-									<span class="li-calen"><i class="fa fa-calendar"></i><input type="text" id="datetimepicker12" placeholder="Chọn ngày diễn ra" value = ""/></span>
+									<span class="li-calen"><i class="fa fa-calendar"></i><input type="text" id="datetimepicker12" value = "" placeholder="Chọn ngày diễn ra" /></span>
 								</li>
 							</ul>
 						</li>
@@ -83,9 +87,9 @@
 							</span>
 							<a class="em-bo dropdown-time" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="event/search/">
 							Tất cả <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu dropdown-menu-save">
-								<li class="lv2"><a data-type="tat-ca">Tất cả</a></li>
-								<li class="lv2"><a data-type="noi-bat">Nổi bật</a></li>
+							<ul id="type_dropdown" class="dropdown-menu dropdown-menu-save">
+								<li class="lv2"><a data-type="tat-ca" id="type-tat-ca">Tất cả khuyến mãi</a></li>
+								<li class="lv2"><a data-type="noi-bat" id="type-noi-bat">Nổi bật</a></li>
 							</ul>
 						</li>
 		
@@ -99,11 +103,11 @@
 			<div class="es-top full-100">
 				<div class="container" id="filter-tag">
 					<span class="keyword"><strong>Tìm kiếm:</strong>  &nbsp;&nbsp;</span>
-                    <span id="name-filter" class="badge" data-url=""></span>
-					<span id="city-filter" class="badge" data-url=""></span>
-					<span id="category-filter" class="badge" data-url="<?php echo ($activeCateUrl) ? '&category=' .$activeCateUrl : ''; ?>"><?php echo ($activeCateName)? $activeCateName .'<span><i class="fa fa-remove"></i></span>': '' ; ?></span>
-					<span id="time-filter" class="badge" data-url=""></span>
-                    <span id="type-filter" class="badge" data-url=""></span>						 
+                    <span id="keyword-filter" class="badge" data-keyword="<?php echo isset($_GET['keyword']) ? $_GET['keyword'] : ''; ?>" data-remove-param="<?php echo isset($_GET['keyword']) ? 'keyword='. $_GET['keyword'] : ''; ?>"></span>
+					<span id="city-filter" class="badge" data-city="<?php echo isset($_GET['city']) ? '#city-'.$_GET['city'] : ''; ?>" data-remove-param="<?php echo isset($_GET['city']) ? 'city='. $_GET['city'] : ''; ?>"></span>
+					<span id="category-filter" class="badge" data-category="<?php echo isset($_GET['category']) ? '#category-'.$_GET['category'] : ''; ?>" data-remove-param="<?php echo isset($_GET['category']) ? 'category='. $_GET['category'] : ''; ?>"></span>
+					<span id="time-filter" class="badge" data-time="<?php echo isset($_GET['time']) ? '#time-'.$_GET['time'] : ''; ?>" data-remove-param="<?php echo isset($_GET['time']) ? 'time='. $_GET['time'] : ''; ?>"></span>
+                    <span id="type-filter" class="badge" data-type="<?php echo isset($_GET['type']) ? '#type-'.$_GET['type'] : ''; ?>" data-remove-param="<?php echo isset($_GET['type']) ? 'type='. $_GET['type'] : ''; ?>"></span>						 
 				</div>
 			</div>
 		</div>
@@ -157,6 +161,7 @@
 <script type="text/javascript">
    
     $(function () {
+        
         $('#datetimepicker12').datetimepicker({
             //inline: true,
             locale: 'vi',
@@ -164,22 +169,91 @@
             useCurrent: false
         }).on('dp.change',function(e){
             offset = 0;
-            get_event($('#datetimepicker12').data('date'));
+            console.log($('#datetimepicker12').data('date'));
+            var old_param = '<?php echo isset($_GET["time"]) ? "time=".$_GET["time"]: ""; ?>';
+            var new_param = 'time=' + $('#datetimepicker12').data('date');
+            redirectUrl(old_param, new_param);
             //get_events_filter(filterJson,key,'start_date','>=',$('#datetimepicker12').data('date'),limit,offset);
         });
-        //$('.datepicker .today').trigger('click');
+        
+        if($('#keyword-filter').data('keyword') != '') {
+            var keyword = $('#keyword-filter').data('keyword');
+            if(keyword != ''){
+                keyword = str_replace('-', ' ', keyword);
+                $('#keyword-filter').text(keyword).append('<i class="fa fa-remove"></i>');
+            }
+        }
+        if($('#city-filter').data('city') != '') {
+            var citySelector = $('#city-filter').data('city');
+            var activeCity = $(citySelector).text();
+            $('#city-filter').text(activeCity).append('<i class="fa fa-remove"></i>');
+        }
+        if($('#category-filter').data('category') != '') {
+            var cateSelector = $('#category-filter').data('category');
+            var activeCate = $(cateSelector).text();
+            $('#category-filter').text(activeCate).append('<i class="fa fa-remove"></i>');
+        }
+        if($('#time-filter').data('time') != '') {
+            var timeSelector = $('#time-filter').data('time');
+            var activeTime = $(timeSelector).text();
+            if(activeTime != ''){    
+                $('#time-filter').text(activeTime).append('<i class="fa fa-remove"></i>');
+            }
+            else{
+                $('#time-filter').text(str_replace('#time-', '', timeSelector)).append('<i class="fa fa-remove"></i>');
+            }
+        }
+        if($('#type-filter').data('type') != '') {
+            var typeSelector = $('#type-filter').data('type');
+            var activeType = $(typeSelector).text();
+            $('#type-filter').text(activeType).append('<i class="fa fa-remove"></i>');
+        }
+        
+        $('.badge .fa-remove').on('click', function() {
+            var currentParam = $(this).parent().data('remove-param');
+            console.log('currentParam= ' + currentParam);
+            var currentUrl  = decodeURI(window.location.href);
+            console.log('currentUrl= ' + currentUrl);
+            if(currentUrl.indexOf('&'+ currentParam) !== -1){
+                redirectUrl = str_replace('&'+ currentParam, '', currentUrl);
+            }
+            else if(currentUrl.indexOf(currentParam) !== -1){
+                redirectUrl = str_replace(currentParam, '', currentUrl);
+            }
+            else{
+                redirectUrl = 'error/not_found';
+            }
+            console.log('redirectUrl= ' + redirectUrl);
+            window.location = redirectUrl;
+        });
     });
 </script>
 
 <script type="text/javascript"><!--
 $('#city_dropdown li a').on('click', function() {
-    var old_param = '<?php echo isset($_GET["city"]) ? "&city=".$_GET["city"]: ""; ?>';
-    var new_param = '&city=' + $(this).data('link');
-    var cityName = $(this).text();
-    var cityBlock = cityName + ' <span><i class="fa fa-remove"></i></span>';
-    $('#city-filter').data('url', new_param);
-    $('#city-filter').html(cityBlock);
-    redirect(old_param, new_param);
+    var old_param = '<?php echo isset($_GET["city"]) ? "city=".$_GET["city"]: ""; ?>';
+    var new_param = 'city=' + $(this).data('city');
+    redirectUrl(old_param, new_param);
+});
+
+$('#category_dropdown li a').on('click', function() {
+    var old_param = '<?php echo isset($_GET["category"]) ? "category=".$_GET["category"]: ""; ?>';
+    var new_param = 'category=' + $(this).data('category');
+    redirectUrl(old_param, new_param);
+});
+
+$('#time_dropdown li a').on('click', function() {
+    var old_param = '<?php echo isset($_GET["time"]) ? "time=".$_GET["time"]: ""; ?>';
+    var new_param = 'time=' + $(this).data('time');
+    redirectUrl(old_param, new_param);
+});
+
+$('#type_dropdown li a').on('click', function() {
+    var old_param = '<?php echo isset($_GET["type"]) ? "type=".$_GET["type"]: ""; ?>';
+    var new_param = 'type=' + $(this).data('type');
+    redirectUrl(old_param, new_param);
 });
 //--></script>
+
+
 <?php echo $footer; ?>

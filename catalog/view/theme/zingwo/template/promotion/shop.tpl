@@ -81,12 +81,19 @@
                                                 </strong>
                                             </h3>
                                             <div class="pull-left">
-                                                <span>Bắt đầu: <?php echo $promotion['start_time']; ?></span><br/>
-                                                <span>Kết thúc: <?php echo $promotion['end_time']; ?></span><br/>
-                                                <span class="local"><?php echo $promotion['address']; ?></span>
+                                                <p class="date">
+                							     <?php echo $shop_info['name'];?>             
+                    							</p>
+                    							<p class="local">
+                    								<i class="fa fa-small fa-map-marker"></i>
+                                                    <?php echo $promotion['city']; ?>
+                    							</p>
                                             </div>
                                             <div class="pull-right loged-action">
                                                  <?php echo $promotion['action']; ?>
+                                                 <div class="event-date">
+                                                    <?php echo $promotion['dateOuput']; ?>
+                                                </div>
                                             </div>   
                                         </div>
                                     </li>

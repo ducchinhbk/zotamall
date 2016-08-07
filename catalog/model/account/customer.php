@@ -10,9 +10,12 @@ class ModelAccountCustomer extends Model {
 		$this->load->model('account/customer_group');
 
 		$customer_group_info = $this->model_account_customer_group->getCustomerGroup($customer_group_id);
-
-		$this->db->query("INSERT INTO customer SET customer_group_id = '" . (int)$customer_group_id . "',  firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "',  salt = '" . $this->db->escape($salt = token(9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "',  ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '1', approved = '" . (int)!$customer_group_info['approval'] . "', date_added = NOW()");
-
+        if(isset($data['image'])){
+		  $this->db->query("INSERT INTO customer SET customer_group_id = '" . (int)$customer_group_id . "',  firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "',  image = '" . $this->db->escape($data['image']) . "',  salt = '" . $this->db->escape($salt = token(9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "',  ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '1', approved = '" . (int)!$customer_group_info['approval'] . "', date_added = NOW()");
+        }
+        else{
+            $this->db->query("INSERT INTO customer SET customer_group_id = '" . (int)$customer_group_id . "',  firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "',  salt = '" . $this->db->escape($salt = token(9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "',  ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '1', approved = '" . (int)!$customer_group_info['approval'] . "', date_added = NOW()");
+        }
 		$customer_id = $this->db->getLastId();
 
 		$this->load->language('mail/customer');

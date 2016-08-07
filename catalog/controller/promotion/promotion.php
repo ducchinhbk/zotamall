@@ -33,34 +33,13 @@ class ControllerPromotionPromotion extends Controller {
         $this->load->model('catalog/promotion');
         $promotion_info = $this->model_catalog_promotion->getPromotion($promotion_id);
 		if ( !empty($promotion_info) ) {
-		  
-        
             $data['footer'] = $this->load->controller('common/footer');
     		$data['header'] = $this->load->controller('common/header');
         		
     		$this->response->setOutput($this->load->view('promotion/promotion', $data));
-	  
         }
         else{
-            
-            $this->load->language('error/not_found');
-
-            $this->document->setTitle($this->language->get('heading_title'));
-
-            $data['heading_title'] = $this->language->get('heading_title');
-
-		    $data['text_error'] = $this->language->get('text_error');
-
-            $data['button_continue'] = $this->language->get('button_continue');
-
-            $data['continue'] = $this->url->link('common/home');
-
-			$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');
-
-			$data['footer'] = $this->load->controller('common/footer');
-			$data['header'] = $this->load->controller('common/header');
-
-			$this->response->setOutput($this->load->view('error/not_found', $data));
+            $this->response->redirect($this->url->custom_link('error/not_found'));
         }
     }
     

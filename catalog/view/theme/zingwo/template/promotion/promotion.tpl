@@ -28,35 +28,37 @@
 		<div class="container" style="position: relative">
 			<div class="sidebar hidden-sm hidden-xs">
 				<div class="event-organ full-100">
-					<h4>Viện Pháp tại TP Hồ Chí Minh</h4>
+					<h4>Tribe: Fashion & Purpose</h4>
+                    <p>A global, socially conscious fashion line created to empower women around the world.</p>
+                    <div class="place-block">
+                        <div class="place-info">
+                          <img class="place-avatar" src="https://graph.facebook.com/v2.2/500071561/picture?width=200"/>
+                          <div class="place-details">
+                            <div class="place-detailsName">
+                              sarah.hidey
+                            </div>
+                            <div class="place-detailsLocation">
+                              Denver, Etats-Unis
+                            </div>
+                            <div class="place-detailsLinks">
+                              <a class="place-detailsLinks-info">Xem trang</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
 					<ul class="event-info-key mgt15">
-						<li class="namekey">
-							<label>Thời gian:</label>
-							<span>Từ <strong>20:00 Ngày 01/07/2016 </strong> 
-								Đến <strong>23:00 Ngày 02/07/2016 </strong>
-							</span>
-						</li>
-						<li class="addskey">
-							<label>Địa điểm:</label>
-							<span>Nhà hát Thành phố, Ho Chi Minh City, Ho Chi Minh, Vietnam</span>
-						</li>
-						<li class="catekey">
-							<label>Danh mục:</label>
-							<span><a href="#">Văn hóa &amp; Giải trí</a></span>
-						</li>
+						
 						<li class="phonekey">
-							<label>Hotline:</label>
-							<span>09 32 01 54 54</span>
+							<a class="btn btn-success"><i class="fa fa-phone"></i> Xem số điện thoại</a>
 						</li>
-						<li class="emailkey">
-							<label>Email:</label>
-							<span>carmen@lysevents.com</span>
+                        <li class="addskey">
+							<span><i class="fa fa-map-marker"></i> Nhà hát Thành phố, Ho Chi Minh City, Ho Chi Minh, Vietnam</span>
 						</li>
 					</ul>
 				</div>
 				<div class="event-info full-100">
-					<input type="hidden" id="event_latitude" value="10.851644">
-					<input type="hidden" id="event_longitude" value="106.660675">
+					<input type="hidden" id="event_latitude" value="10.851644"/>
+					<input type="hidden" id="event_longitude" value="106.660675"/>
 					<div class="event-maps">
 						<div id="map" style="width:100%;height:150px;">No map</div>
 					</div>
@@ -82,30 +84,19 @@
 					}
 					</script>
 					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzzE_zON49mpNwFjeFT8WnOznyNXs70YQ&callback=initAutocomplete" async defer></script>
-					
+					<p class="type-xs lg-map-view">
+                		<a href="#" data-reveal-id="getMap">
+                		<i class="fa fa-location-arrow"></i> Xem bản đồ lớn	</a>
+                	</p>
 				</div>
 				
 				
 				<div class="event-sponsor full-100">
-					<ul class="ads-vip">
-						<li>
-							<div class="bi-img">
-								<a href="vuot-pha-moi-gioi-han-cuoc-song-1995602-2016.html"?>
-									<img src="http://media.sukienhay.com/cache/images/event/3553747299.png" class="img-responsive" alt="Vượt phá mọi giới hạn cuộc sống" />    			</a>
-							</div>
-							<h3 class="adv-sidebar-title"><a href="vuot-pha-moi-gioi-han-cuoc-song-1995602-2016.html"?>Vượt phá mọi giới hạn cuộc sống</a></h3>
-							<p class="date">
-								<i class="fa fa-small fa-clock-o"></i>
-										Từ 09:00 Ngày 07-07-2016        
-							</p>
-						</li>
 					
-					</ul>
-
 					<div class="boxads adsl1 txtcenter full-100">
 					</div>					
 					<div id="event-sponser" style="float: left; position: static; z-index: 999">
-						<h3 class="sidebarst1" style="margin-top:0">Sự kiện được tài trợ</h3>
+						<h3 class="sidebarst1" style="margin-top:0">Khuyến mãi gợi ý</h3>
 						<ul style="display: block; float: left">
                             <li>
 								<div class="col-md-5 pdl0 pdr0">
@@ -188,9 +179,6 @@
 							<i class="fa fa-map-marker"></i>Nhà hát Thành phố, Ho Chi Minh City, Ho Chi Minh, Vietnam													
 							
 						</span>
-						<span class="user">
-							Đăng bởi: <a href="HeartSun" target="_blank"> Hieu Outliers</a>
-						</span>
 					</div>
 					<div class="col-md-5 reviews text-right hidden-xs hidden-sm pdr00 pdl00 ">
 						<div class="mgb20">
@@ -210,28 +198,7 @@
 				</div>
 			
 				<div class="action-e full-100" id="action-register-button">
-					<div class="action-f col-md-4 pdl0 hidden-xs">
-						<div class="fb-like btn btn-social" data-href="vo-kich-opera-carmen-cua-georges-bizet-1995567-2016.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-						<span class="social-btn social-facebook">
-						</span>
-						<span class="social-btn social-google">
-							<div class="g-plusone" data-size="medium" data-href="vo-kich-opera-carmen-cua-georges-bizet-1995567-2016.html"></div>
-							<script type="text/javascript">
-							  (function() {
-								var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-								po.src = 'https://apis.google.com/js/platform.js';
-								var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-							  })();
-							</script>
-						</span>
-					</div>
-
-					<div class="action-r col-md-8 pdr0 text-right  phone-number-and-register">
-						<a href="tel:0932015454" class="btn btn-ads pdl0">
-							<i class="fa fa-phone-square"></i> &nbsp; 09 32 01 54 54								
-						</a>
-																			
-					</div>
+				
 				</div>
 			<!--  /* End action Event*/ -->
 				<div class="event-content full-100">
@@ -261,26 +228,6 @@
 						<span class="tag"></span>
 					</div>
 					
-					<div class="event-comment full-100" id="comment-widget">
-						<h3 class="sidebarst2">Hỏi đáp</h3>
-						<form class="form write-comment full-100 mgb15" method="post" id="form_send_question">
-							<input type="hidden" class="event_id_input_hidden" value="1995567"/>
-							<input type="hidden" class="uid_hidden" value=""/>
-							<div class="form-group" id="comment_content_form_group">
-								<textarea name="comment_content" class="form-control" id="comment_content" rows="1" placeholder="Bạn có câu hỏi? Đặt câu hỏi tại đây" required></textarea>
-							</div>
-							<button name="comment_submit" type="button" id="send_question_submit" class="btn btn-success btn-sm btn-sendquestion" data-plugin="m.popup" data-content=".user-form-login-popup" data-hide-on-over-lay-click="true" onclick="scrollLogin()">Gửi câu hỏi</button>
-						</form>
-						<input type="hidden" class="uid_hidden" value=""/>
-						<ul id="comment-show">
-							
-						</ul>
-						<div class="clearfix"></div>
-						<ul id="comment-show-2">
-							<div class="clearfix"></div>
-						</ul>
-						<div class="loader-inner ball-pulse text-center hidden" id="loader-comment"></div>
-					</div>
 
 					<div class="event-reviews full-100" id="event-reviews">
 						<h3 class="sidebarst2">Đánh giá</h3>
@@ -294,12 +241,11 @@
 							<a class=" text-primary">0 đánh giá</a> - 0.0/5.0 điểm.
 							<p class="full-100">Đánh giá của bạn là thông tin quý giá cho cộng đồng</p>
 							<p class=''>
-								<a href="javascript:void(0);" data-plugin="m.popup" data-content=".user-form-login-popup" data-hide-on-over-lay-click="true" onclick="scrollLogin()" class="btn btn-default">
-								<b class="fa fa-edit"></b> Viết đánh giá của bạn</a>
+								<a href="javascript:void(0);" class="btn btn-success">
+								<b class="fa fa-edit"></b> Viết đánh giá</a>
 							</p>
                         </div>
 						<div class="col-md-7 pdr0 hidden-xs  hidden-sm">
-							<span class="full-100 mgb10">Thống kê lượt đánh giá</span>
 							<div class="row">
 								<div class="col-md-2">
 									5 sao
@@ -307,12 +253,12 @@
 
 								<div class="col-md-6 pdl0">
 									<div class="progress">
-									  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+									  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 53%;">
 									  </div>
 									</div>
 								</div>
 								<div class="col-md-4 pdl0">
-									0%
+									53%
 								</div>
 							</div>
 
@@ -323,12 +269,12 @@
 
 								<div class="col-md-6 pdl0">
 									<div class="progress">
-									  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+									  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
 									  </div>
 									</div>
 								</div>
 								<div class="col-md-4 pdl0">
-									0%
+									20%
 								</div>
 							</div>
 
@@ -395,46 +341,52 @@
 						<div id="event-related">
 							<ul>
 							<li class="col-md-4 mgl0 mgr0">
-								<img src="http://media.sukienhay.com/cache/images/event/73802211.png" class="img-responsive" alt="BEETHOVEN &amp; BRAHMS" />            <div class="title">
+								<img src="http://media.sukienhay.com/cache/images/event/73802211.png" class="img-responsive" alt="BEETHOVEN &amp; BRAHMS" />            
+                                <div class="title">
 									<h3><a href="beethoven-brahms-1995417-2016.html" class="nameevent">BEETHOVEN &amp; BRAHMS</a></h3>
 									<span class="date">19:00 - 24/06/2016</span>
-									<span class="local">Nhạc viện Thành phố Hồ Chí Minh, 112 Nguyễn Du, Quận 1, Hồ Chí Minh</span>
+									<span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
 								</div>
 							</li>
 							<li class="col-md-4 mgl0 mgr0">
-								<img src="http://media.sukienhay.com/cache/images/event/1871318128.png" class="img-responsive" alt="Hòa nhạc - Tình khúc BOLERO" />            <div class="title">
+								<img src="http://media.sukienhay.com/cache/images/event/1871318128.png" class="img-responsive" alt="Hòa nhạc - Tình khúc BOLERO" />            
+                                <div class="title">
 									<h3><a href="hoa-nhac-tinh-khuc-bolero-1995420-2016.html" class="nameevent">Hòa nhạc - Tình khúc BOLERO</a></h3>
 									<span class="date">20:00 - 24/06/2016</span>
-									<span class="local">Cung Văn hoá Lao động TP.HCM, 138 Nguyễn Thị Minh Khai, Quận 1, Hồ Chí Minh</span>
+									<span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
 								</div>
 							</li>
 							<li class="col-md-4 mgl0 mgr0">
-								<img src="http://media.sukienhay.com/cache/images/event/2182060529.png" class="img-responsive" alt="Đêm nhạc danh ca PHƯƠNG DUNG - GIAO LINH" />            <div class="title">
+								<img src="http://media.sukienhay.com/cache/images/event/2182060529.png" class="img-responsive" alt="Đêm nhạc danh ca PHƯƠNG DUNG - GIAO LINH" />            
+                                <div class="title">
 									<h3><a href="dem-nhac-danh-ca-phuong-dung-giao-linh-1995568-2016.html" class="nameevent">Đêm nhạc danh ca PHƯƠNG DUNG - GIAO LINH</a></h3>
 									<span class="date">21:00 - 25/06/2016</span>
-									<span class="local">Phòng Trà Đồng Dao, Pasteur, Ho Chi Minh City, Vietnam</span>
+									<span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
 								</div>
 							</li>
 							<li class="col-md-12 pdt20"></li>                
 							<li class="col-md-4 mgl0 mgr0">
-								<img src="http://media.sukienhay.com/cache/images/event/3036481794.png" class="img-responsive" alt="Liveshow ĐÀM VĨNH HƯNG - Có Những Niềm Riêng" />            <div class="title">
+								<img src="http://media.sukienhay.com/cache/images/event/3036481794.png" class="img-responsive" alt="Liveshow ĐÀM VĨNH HƯNG - Có Những Niềm Riêng" />            
+                                <div class="title">
 									<h3><a href="liveshow-dam-vinh-hung-co-nhung-niem-rieng-1995569-2016.html" class="nameevent">Liveshow ĐÀM VĨNH HƯNG - Có Những Niềm Riêng</a></h3>
 									<span class="date">20:30 - 30/06/2016</span>
-									<span class="local">Phòng Trà MTV, Ho Chi Minh City, Vietnam</span>
+									<span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
 								</div>
 							</li>
 							<li class="col-md-4 mgl0 mgr0">
-								<img src="http://media.sukienhay.com/cache/images/event/3395832094.png" class="img-responsive" alt="Liveshow Ông Hoàng Nhạc Sến - NGỌC SƠN" />            <div class="title">
+								<img src="http://media.sukienhay.com/cache/images/event/3395832094.png" class="img-responsive" alt="Liveshow Ông Hoàng Nhạc Sến - NGỌC SƠN" />            
+                                <div class="title">
 									<h3><a href="liveshow-ong-hoang-nhac-sen-ngoc-son-1995570-2016.html" class="nameevent">Liveshow Ông Hoàng Nhạc Sến - NGỌC SƠN</a></h3>
 									<span class="date">20:30 - 08/07/2016</span>
-									<span class="local">Phòng Trà MTV, Ho Chi Minh City, Vietnam</span>
+									<span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
 								</div>
 							</li>
 							<li class="col-md-4 mgl0 mgr0">
-								<img src="http://media.sukienhay.com/cache/images/event/1495721632.png" class="img-responsive" alt="Danh ca Ý LAN với đêm nhạc chủ đề: &quot;Dạ Khúc&quot;" />            <div class="title">
+								<img src="http://media.sukienhay.com/cache/images/event/1495721632.png" class="img-responsive" alt="Danh ca Ý LAN với đêm nhạc chủ đề: &quot;Dạ Khúc&quot;" />            
+                                <div class="title">
 									<h3><a href="danh-ca-y-lan-voi-dem-nhac-chu-de-da-khuc-1995415-2016.html" class="nameevent">Danh ca Ý LAN với đêm nhạc chủ đề: &quot;Dạ Khúc&quot;</a></h3>
 									<span class="date">21:00 - 15/07/2016</span>
-									<span class="local">Phòng Trà Đồng Dao, 164 Pasteur, Quận 1, Hồ Chí Minh</span>
+									<span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
 								</div>
 							</li>
 							<li class="col-md-12 pdt20"></li>            
