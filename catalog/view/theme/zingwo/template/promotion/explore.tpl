@@ -120,9 +120,9 @@
 			<div id="adsvip" class="full-100">
 				<div id="adsvip-item" class="full-1001">
                     <?php foreach($promotions as $promotion ){ ?>
-                    <div class="col-md-4 col-sm-6 pdl0 pdr15 mgb20">
+                    <div class="col-md-4 col-sm-6 pdl0 pdr15 mgb20 promotion-item">
 						<div class="bi-img">
-							<a href="<?php echo $promotion['link']; ?>">
+							<a href="<?php echo $promotion['link']; ?>" class="img-thumb">
 							     <img src="<?php echo $promotion['image']; ?>" class="img-responsive" alt="<?php echo $promotion['name']; ?>">  
                             </a>
 						</div>

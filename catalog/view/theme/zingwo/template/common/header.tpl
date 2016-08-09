@@ -74,7 +74,7 @@
                     <span class="fa fa-user"></span>
                 </a>
             </div>
-            <div class="menutop search col-md-5 col-sm-5 navbar-search navbar-collapse collapse" id="navbar-search-input">
+            <div class="menutop search col-md-4 col-sm-4 navbar-search navbar-collapse collapse" id="navbar-search-input">
                 <div class="input-group input-group-search full-100">
                     <form class="home-search" action="promotion/explore" method="get">
                         <span class="fa fa-search"></span>
@@ -83,13 +83,18 @@
                     </form>
                 </div><!-- /input-group -->
             </div>
-            <div class="menutop col-md-3 hidden-sm pdr0 hidden-xs">
+            <div class="menutop col-md-4 hidden-sm pdr0 hidden-xs">
                 
 				<div class="widget-header-user"  id="widget-header-user">
 					<ul id="user" class="nav navbar-nav navbar-right navbar-top">
-						<li class="out children help">
-                        <a href="<?php echo $explore;?>" class="explore">Khám phá</a>
-							
+						<li class="out children active">
+                            <a href="<?php echo $explore;?>" class="explore">Mua ở đâu</a>
+						</li>
+                        <li>
+                            <a href="#" class="explore">Mua gì</a>
+						</li>
+                        <li>
+                            <a href="#" class="explore">Video</a>
 						</li>
                         <?php if ($logged) { ?>
                             <ul class="header-user-function nav navbar-nav navbar-right navbar-top">
@@ -128,7 +133,7 @@
 
             </div>
             <div class="crtevet hidden-sm hidden-xs">
-                <a type="button" class="btn btn-danger pull-right"  href="<?php echo $create;?>" >Đăng khuyến mãi</a>
+                <a type="button" class="btn create-btn pull-right"  href="<?php echo $create;?>" >Đăng khuyến mãi</a>
             </div>
         </div>
     </div>

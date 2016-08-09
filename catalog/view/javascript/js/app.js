@@ -109,7 +109,7 @@ jQuery(document).ready(function($){
             fullwidth: true,
             transitions: "fade",
             width: 980,
-            height: 365,
+            height: 300,
             responsive: true,
             slideShowDelay: 6e3,
             slideShow: true,

@@ -25,6 +25,9 @@ body{background-color: rgb(245, 245, 245);position: relative;}
 
 /* Menu Top */
 .navbar-top li a:focus, .navbar-top li a:hover{background:none;}
+.navbar-top li a.explore{font-size: 16px;font-weight: bold;color: #333;}
+.navbar-top li a:hover{color: #d9534f;}
+.navbar-top li.active a{color: #d9534f;}
 .navbar-top li a.prfavatar {padding:0 5px 0 7px;}
 .navbar-top li a.prfavatar .prfname {
 	color: #0068bb;
@@ -39,7 +42,7 @@ body{background-color: rgb(245, 245, 245);position: relative;}
 .prfavatar .prfimg{border:1px solid #ccc;}
 
 /* MENU TOP */
-#navbar-search-input {width: 465px !important;}
+#navbar-search-input {width: 420px !important;}
 .crtevet{padding-right:0;}
 #avatar_header{display: inline-block; float: left;}
 
@@ -88,6 +91,7 @@ span.navbar-info{color:#777777;}
 	color:#0068bb;
 }
 .navbar-top ul.user-noti-drop li.noti-no {padding:25px 0; border-bottom:0;}
+#home-slider .container{padding: 0;}
 #home-slider p {
 	margin: 0	
 }
@@ -100,10 +104,10 @@ span.navbar-info{color:#777777;}
 #home-slider .slide-title{
     font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-    font-size: 3.46em;
+    font-size: 2.46em;
     line-height: 1.2em;
     color: #fff;
-    padding-bottom: 20px;
+    margin-top: 0;
 }
 .slide-description,
 .slide-description2{
@@ -749,8 +753,6 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 
 /***Chinh CSS***/
 #header{background-color: #fff;}
-.navbar-top li a.explore{font-size: 16px;font-weight: bold;color: #333;}
-.navbar-top li a:hover{color: #d9534f;}
 #slider .container{
 	padding-left: 0;
 }
@@ -1180,4 +1182,36 @@ p.date, p.local{
 .gmnoprint, .gm-style-cc{display: none !important;}
 .lg-map-view{margin: 10px 0;}
 .lg-map-view a{color: #337ab7;}
+.promotion-item .img-thumb{position: relative; display: block;}
+.promotion-item .img-responsive {
+    webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition: -webkit-transform .35s;
+    -moz-transition: -moz-transform .35s;
+    transition: transform .35s;
+}
+.promotion-item:hover .img-responsive, .promotion-item:focus .img-responsive, .promotion-item:active .img-responsive {
+    -webkit-transform: scaleY(1.07);
+    -moz-transform: scaleY(1.07);
+    -ms-transform: scaleY(1.07);
+    -o-transform: scaleY(1.07);
+    transform: scaleY(1.07);
+}
+.promotion-item:hover .description{
+    transition: box-shadow .25s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2),0 4px 15px 0 rgba(0,0,0,.19);
+}
+.create-btn{
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #fff;
+    color: #cf2127;
+    font-size: 14px;
+    border-radius: 2px;
+    line-height: 30px;
+    border: 1px solid #cf2127;
+}
 /***End Chinh CSS***/
