@@ -588,7 +588,7 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 .pf-box .pf-box-content ul.es-resuit-item .bi-img{height:150px; position: relative; overflow:hidden;}
 
 .pf-box-profile li, .pf-box-activity li{margin-bottom:15px; font-size:12px;}
-.pf-box-profile li i.fa, .pf-box-activity li i.fa{display:block; float:left; margin-right:10px; color:#777; margin-top:1px;}
+.pf-box-profile li i.fa, .pf-box-activity li i.fa{display:block; float:left; margin-right:10px; font-size: 10px; color:#777; margin-top:1px;}
 .pf-box-profile li a, .pf-box-activity li a{color:#0068bb;}
 .pf-box .es-resuit-item h3{font-size:16px;}
 .box-avatar{width:150px; height:150px; background-color:#000; border-radius:80px;}

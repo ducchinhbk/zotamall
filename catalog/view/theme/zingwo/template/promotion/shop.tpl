@@ -3,7 +3,7 @@
 <div id="pf-detail" class="full-100">
     <div class="container">
         <div class="row">
-            <div class="about-cover-o about-box full-100" style="background: rgba(0, 0, 0, 0) url(http://media.sukienhay.com/cache/images/event/2088927129.png) no-repeat scroll center center / cover; height: 300px;">
+            <div class="about-cover-o about-box full-100" style="background: rgba(0, 0, 0, 0) url(http://media.sukienhay.com/cache/images/event/2088927129.png) no-repeat scroll center center / cover; height: 275px;">
         		<div class="pf-top full-100">
                     <div class="pf-place">
                         <div>
