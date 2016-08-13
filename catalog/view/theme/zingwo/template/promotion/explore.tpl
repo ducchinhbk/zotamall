@@ -1,22 +1,31 @@
 <?php echo $header; ?>
 <div id="about" class="about-home full-100">
-    <div class="about-cover-o about-box full-100">
+    <div class="about-cover-o about-box full-100" style="background: url('image/catalog/nb_mainbg.png')!important;">
 		<div class="container">
-			<div class="header-container">
-				<h1 class="search-title hidden-sm hidden-xs">Thiên đường khuyến mãi</h1>
+			<div class="header-container hero__search">
+				<h1 class="search-title hidden-sm hidden-xs">Khám phá khuyến mãi quanh bạn</h1>
 				<div class="w-100 clearfix">
-                    <form action="promotion/explore" method="get">
-					<div class="col-md-8 col-md-offset-2 clearfix padding-left-0 padding-right-0">
-						<div class="w-100 searcher">
-							<div class="input-group rounded search-form">
-								<input type="text" class="form-control search-form-input" placeholder="Tìm sự kiện, khóa học, khu vui chơi..." tabindex="1" autocomplete="off"/>
-								<span tabindex="2" class="search-btn input-group-addon bg-white smooth-trans" data-search-click="true"><span class="fa fa-search"></span></span>
-                                <input type="hidden" name="keyword"  value="" />
-							</div>
-							<div class="search-res relative" data-search-result="true"><div class="autocomplete-suggestions" style="position: absolute; display: none; z-index: 9999;"></div></div>
-						</div>
+					<div class="col-md-10 small-centered">
+                        <form id="searchForm" action="promotion/explore" method="get">
+                            <div class="hero-search-group">
+                                <div class="hero-search-input">
+                                    <div class="loader hide-loader"></div>
+                                    <input type="search" id="searchKey" placeholder="Search restaurants, spa, events, things to do..." class="ui-autocomplete-input search-form-input" autocomplete="off">
+                                    <div class="suggestion_list">
+                                        <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content hero-search-input__suggest" id="ui-id-1" tabindex="0" style="display: none;">
+                                            <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
+                                            <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
+                                            <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
+                                        </ul>
+                                    </div>
+                                    <input type="hidden" name="keyword"  value="" />
+                                </div>
+                                <div class="hero-search-button">
+                                    <button type="submit" class="button prefix search-button"></button>
+                                </div>
+                            </div>
+                        </form>
 					</div>
-                    </form>
 				</div>
 			</div>
 		</div>

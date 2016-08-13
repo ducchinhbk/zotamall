@@ -1,5 +1,5 @@
 <?php
-require DIR_FACEBOOK.'/autoload.php';
+require_once DIR_FACEBOOK.'/autoload.php';
 
 class ControllerAccountLogin extends Controller {
 	private $error = array();
@@ -218,4 +218,7 @@ class ControllerAccountLogin extends Controller {
             
 		}
 	}
+    public function glogin(){
+        
+    }
 }

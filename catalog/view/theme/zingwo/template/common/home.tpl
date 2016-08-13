@@ -1,48 +1,123 @@
 <?php echo $header; ?>
-<div id="home-slider">
+<div class="hero hero_image" style="background: url('image/catalog/nb_mainbg.png')!important;">
     <div class="container">
-        <div class="md-slide-items md-slider" id="md-slider-1" data-thumb-width="105" data-thumb-height="70">
-			<div class="md-slide-item slide-0" data-timeout="6000">
-				<div class="md-mainimg"><img src="image/catalog/th-slide0.jpg" alt=""/></div>
-				<div class="md-objects">
-					<div class="md-object rs slide-title" data-x="20" data-y="38" data-width="480" data-height="30" data-start="700" data-stop="5500" data-easein="random" data-easeout="keep">
-						<p>Search Money for Your Creative Ideas?</p>
-					</div>
-					<div class="md-object rs slide-description" data-x="20" data-y="160" data-width="480" data-height="90" data-start="1400" data-stop="7500" data-easein="random" data-easeout="keep">
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
-					</div>
-					<div class="md-object rs" data-x="20" data-y="260" data-width="120" data-height="23" data-padding-top="9" data-padding-bottom="7" data-padding-left="10" data-padding-right="10" data-start="1800" data-stop="7500" data-easein="random" data-easeout="keep">
-						<a href="#" class="btn btn-gray">Learn more</a>
-					</div>
-					
-				</div>
-			</div>
-			<div class="md-slide-item slide-1" data-timeout="6000">
-				<div class="md-mainimg"><img src="image/catalog/th-slide1.jpg" alt=""/></div>
-				<div class="md-objects">
-					<div class="md-object rs slide-title" data-x="20" data-y="118" data-width="390" data-height="30" data-start="700" data-stop="5500" data-easein="random" data-easeout="random">
-						<p>A creative engine</p>
-					</div>
-					<div class="md-object rs slide-description2" data-x="20" data-y="160" data-width="390" data-height="100" data-start="1400" data-stop="4500" data-easein="random" data-easeout="random">
-						<p>Mauris volutpat, lectus vitae pretium sagittis, turpis augue euismod libero</p>
-					</div>
-					
-				</div>
-			</div>
-			<div class="md-slide-item slide-2" data-timeout="4000">
-				<div class="md-mainimg"><img src="image/catalog/th-slide2.jpg" alt=""/></div>
-				<div class="md-objects">
-					<div class="md-object slide-with-background" data-x="20" data-y="30" data-width="500" data-height="170" data-padding-top="30" data-padding-bottom="30" data-padding-left="35" data-padding-right="35" data-start="300" data-stop="3600" data-easein="random" data-easeout="keep">
-						<h2 class="rs slide-title">Start your project today</h2>
-						<p class="rs slide-description2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient monte.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="hero__content txt-center txt-white">
+            <div class="row">
+                <div class="col-md-10 small-centered">
+                    <h1 class="h2">Khám phá khuyến mãi quanh bạn</h1>
+                    <div class="hero__search homepage-center-search">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 pd0">
+                                <div class="search-location">
+                                    <button class="location-name">
+                                        <span>Search within</span>
+                                        <span>Ahmedabad</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-9 pd0">
+                                <form id="searchForm" data-vertical="local" method="get">
+                                    <div class="hero-search-group">
+                                        <div class="hero-search-input">
+                                            <div class="loader hide-loader"></div>
+                                            <input type="search" id="searchKey" name="searchKey" placeholder="Search restaurants, spa, events, things to do..." class="ui-autocomplete-input" autocomplete="off"/>
+                                            <div class="suggestion_list">
+                                                <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content hero-search-input__suggest" id="ui-id-1" tabindex="0" style="display: none;">
+                                                    <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
+                                                    <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
+                                                    <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="hero-search-button">
+                                            <button type="submit" class="button prefix search-button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="homepage-center-cat hero__categories">
+                <div class="row">
+                    <ul>
+                        <li class="js-ga-icon-item">
+                            <a href="/offers/ahmedabad/food-and-drink">
+                                <img height="60px" width="60px" alt="Food &amp; Drink" src="//dynamic.nearbuy.com/c1fe2c98-57c3-4568-b2aa-503027b01c6b"/>
+                                <p>Food &amp; Drink</p>
+                            </a>
+                        </li>
+                        <li class="js-ga-icon-item">
+                            <a href="/offers/ahmedabad/spa-and-massage">
+                                <img height="60px" width="60px" alt="Spa &amp; Massage" src="//dynamic.nearbuy.com/cf370019-bc71-40d0-ad21-1da05a69306b"/>
+                                <p>Spa &amp; Massage</p>
+                            </a>
+                        </li>
+                        <li class="js-ga-icon-item">
+                            <a href="/offers/ahmedabad/beauty-and-salon">
+                                <img height="60px" width="60px" alt="Beauty &amp; Salon" src="//dynamic.nearbuy.com/bce6a031-2e5e-4bd3-88cb-c9ec55842ecc"/>
+                                <p>Beauty &amp; Salon</p>
+                            </a>
+                        </li>
+                        <li class="js-ga-icon-item">
+                            <a href="/offers/ahmedabad/health">
+                                <img height="60px" width="60px" alt="Health &amp; Wellness" src="//dynamic.nearbuy.com/37dff27c-cfc1-4c44-8322-b4121c50f297"/>
+                                <p>Health &amp; Wellness</p>
+                            </a>
+                        </li>
+                        <li class="js-ga-icon-item">
+                            <a href="/offers/ahmedabad/activities">
+                                <img height="60px" width="60px" alt="Activities" src="//dynamic.nearbuy.com/463bcae3-36f1-4ec4-ba40-551319dcbfa5"/>
+                                <p>Activities</p>
+                            </a>
+                        </li>
+                        <li class="js-ga-icon-item">
+                            <a href="/offers/ahmedabad/home-and-auto">
+                                <img height="60px" width="60px" alt="Personal, Home &amp; Auto" src="//dynamic.nearbuy.com/d074c224-456c-419e-a1f2-f729c71e118e"/>
+                                <p>Personal, Home &amp; Auto</p>
+                            </a>
+                        </li>
+                        <li class="js-ga-icon-item">
+                            <a href="/travel">
+                                <img alt="Travel" src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nearbuy/travel_new.png" height="60px" width="60px"/>
+                                <p>Hotels</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</div><!--end: #home-slider -->
+</div>
 <div id="home">
     <div class="container" style="position: relative">
+        <div class="row nb-promise-wraper">
+            <div class="col-md-3 nb-promise-logo">
+                <img src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-promise1.png" data-src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-promise1.png" alt="nearbuy-promise" data-lzled="true"/>
+            </div>
+            <div class="col-md-3 columns nb-promise-table">
+                <img src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-cancel-before1.png" data-src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-cancel-before1.png" alt="nearbuy-promise" data-lzled="true"/>
+                <div class="nb-promises-content">
+                    <h3>cancel before using your voucher?</h3>
+                    <p>No problem</p>
+                </div>
+            </div>
+            <div class="col-md-3 nb-promise-table">
+                <img src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-voucher-expired1.png" data-src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-voucher-expired1.png" alt="nearbuy-promise" data-lzled="true"/>
+                <div class="nb-promises-content">
+                    <h3>voucher expired before you could use it?</h3>
+                    <p>No problem</p>
+                </div>
+            </div>
+            <div class="col-md-3 nb-promise-table left">
+                <img src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-promised-icon1.png" data-src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nb-promised-icon1.png" alt="nearbuy-promise" data-lzled="true"/>
+                <div class="nb-promises-content">
+                    <h3>didn't get what we promised?</h3>
+                    <p>No problem</p>
+                </div>
+            </div>
+        </div>
 		<div class="row">
 			<div id="adsvip" class="full-100">
                 <div class="headbox full-100">

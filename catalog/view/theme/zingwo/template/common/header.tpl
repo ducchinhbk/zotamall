@@ -75,27 +75,18 @@
                 </a>
             </div>
             <div class="menutop search col-md-4 col-sm-4 navbar-search navbar-collapse collapse" id="navbar-search-input">
-                <div class="input-group input-group-search full-100">
-                    <form class="home-search" action="promotion/explore" method="get">
-                        <span class="fa fa-search"></span>
-                        <input type="text" class="form-control search-form-input" placeholder="Nhập từ khóa tìm kiếm" value=""  minlength="3" maxlength="200" />
-                        <input type="hidden" name="keyword"  value="" />
-                    </form>
-                </div><!-- /input-group -->
+               
             </div>
             <div class="menutop col-md-4 hidden-sm pdr0 hidden-xs">
                 
 				<div class="widget-header-user"  id="widget-header-user">
 					<ul id="user" class="nav navbar-nav navbar-right navbar-top">
-						<li class="out children active">
+						<li class="out children">
                             <a href="<?php echo $explore;?>" class="explore">Mua ở đâu</a>
 						</li>
-                        <li>
-                            <a href="#" class="explore">Mua gì</a>
-						</li>
-                        <li>
-                            <a href="#" class="explore">Video</a>
-						</li>
+                        <li class="out">
+    				        <a href="#">Hỗ trợ</a>
+    				    </li>
                         <?php if ($logged) { ?>
                             <ul class="header-user-function nav navbar-nav navbar-right navbar-top">
                                 <li class="user-page">

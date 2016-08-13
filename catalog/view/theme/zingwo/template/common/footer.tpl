@@ -13,25 +13,8 @@
                     <img class="img-responsive" alt="Trust Website | Website uy tín" src="image/catalog/truste.png"/>  
                 </div>          
             </div>
-            
-            <div class="col-md-2">
-                <h4>Quảng cáo</h4>
-                <ul>
-                    <li><a href="#">Bảng giá quảng cáo</a></li>
-                    <li><a href="#">Lý do quảng cáo</a></li>
-                </ul>
-            </div>
-			
-            <div class="col-md-2">
-                <h4>Hệ thống</h4>
-                <ul>
-                    <li><a href="#" rel="nofollow" target="_blank">Tap chi thoi trang</a></li>
-                    <li><a href="#" rel="nofollow">Liveshow hay</a></li>
-                    <li><a href="#" rel="nofollow">Khóa học hay</a></li>
-                    <li><a href="#" target="_blank" title="Thiet ke web" type="Thiet ke web">Thiết kế web</a></li>
-				</ul>
-            </div>            
-            <div class="col-md-2 social pdl45 pull-right">
+                     
+            <div class="col-md-2 social pdl45">
                 <h4>Kết nối</h4>
                 <ul>
                     <li class="Twitter"><a href="http://www.twitter.com/sukienhay" rel="nofollow"><i class="fa fa-twitter-square"></i> Twitter</a></li>
