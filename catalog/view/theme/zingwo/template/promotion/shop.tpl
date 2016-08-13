@@ -91,10 +91,10 @@
                                 <div class="clearfix"></div>
                                 <span style="color:#ea6153;" class="text-danger" id="shop_error"></span>
                             </div>
-                            <div class="pf-box-content">
+                            <div class="pf-box-content shop-detail-box">
                                 <ul class="es-resuit-item">
                                     <?php foreach($promotions as $promotion){ ?>
-                                    <li class="col-md-6 pdl0 pdr15 mgb15 promotion-item">                           
+                                    <li class="col-md-4 pdl0 pdr15 mgb15 promotion-item">                           
                                         <div class="bi-img">
                                             <a href="<?php echo $promotion['link']; ?>" class="img-thumb">
                                                 <img class="img-responsive avatar" src="<?php echo $promotion['image']; ?>" alt="<?php echo $promotion['name']; ?>"/>

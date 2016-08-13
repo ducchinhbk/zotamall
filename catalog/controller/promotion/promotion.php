@@ -33,9 +33,32 @@ class ControllerPromotionPromotion extends Controller {
         $this->load->model('catalog/promotion');
         $promotion_info = $this->model_catalog_promotion->getPromotion($promotion_id);
 		if ( !empty($promotion_info) ) {
+		    $this->load->model('tool/image');
+		    $this->load->model('catalog/shop');
+            $shop_info = $this->model_catalog_shop->getShop($promotion_info['shop_id']);
+            
+            $avatar = $this->model_tool_image->resize('catalog/shop/default_shop.png', 128, 128);
+            if ($shop_info['avatar']) {
+                $avatar = $this->model_tool_image->resize($shop_info['avatar'], 128, 128);
+            }  
+            $data['shop'] = array(
+  				'shop_id' => $shop_info['shop_id'],
+  				'avatar' => $avatar,
+  				'name' => $shop_info['name'],
+  				'telephone' => $shop_info['telephone'],
+                'short_description' => $shop_info['short_description'],
+                'address' => $shop_info['address'].', '. $shop_info['district'] .', '. $shop_info['city'],
+                'district' => $shop_info['district'],
+  				'city' => $shop_info['city'],
+                'latitute' => $shop_info['latitute'],
+                'longtitute' => $shop_info['longtitute'],
+                'link' => $this->url->custom_link($shop_info['link'])
+   			);
+            
+            $data['promotion'] = $promotion_info;
+            
             $data['footer'] = $this->load->controller('common/footer');
     		$data['header'] = $this->load->controller('common/header');
-        		
     		$this->response->setOutput($this->load->view('promotion/promotion', $data));
         }
         else{

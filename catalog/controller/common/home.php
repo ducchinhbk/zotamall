@@ -23,6 +23,17 @@ class ControllerCommonHome extends Controller {
             );
         } 
         
+        /***Get city(zones)***/
+        $this->load->model('catalog/zone');
+        $data['cities'] = array();
+        $results = $this->model_catalog_zone->getZonesByParentId(0);
+        foreach ($results as $result) {
+    		$data['cities'][] = array(
+                'name' => $result['name'] ,
+                'link' => $result['link'],
+            );
+        }
+        
         /***Featured promotions ***/
         $data['featured_promotions'] = array();
 		$results = $this->model_catalog_promotion->getFeaturedPromotions();

@@ -9,18 +9,22 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-3 pd0">
                                 <div class="search-location">
-                                    <button class="location-name">
-                                        <span>Search within</span>
-                                        <span>Ahmedabad</span>
+                                    <button class="location-name dropdown-toggle" data-toggle="dropdown">
+                                        <span>Địa điểm</span>
                                     </button>
+                                    <ul id="home-location" class="dropdown-menu dropdown-menu-address">
+        								<?php foreach($cities as $city) {?>
+        								<li class="lv2" ><a data-city="<?php echo $city['link']; ?>" id="city-<?php echo $city['link']; ?>"><?php echo $city['name']; ?></a></li>
+                                        <?php } ?>
+         							</ul>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-9 pd0">
-                                <form id="searchForm" data-vertical="local" method="get">
+                                <form id="searchForm" action="promotion/explore"method="get">
                                     <div class="hero-search-group">
-                                        <div class="hero-search-input">
+                                        <div class="hero-search-input" id="hero-search-input">
                                             <div class="loader hide-loader"></div>
-                                            <input type="search" id="searchKey" name="searchKey" placeholder="Search restaurants, spa, events, things to do..." class="ui-autocomplete-input" autocomplete="off"/>
+                                            <input type="search" placeholder="Search restaurants, spa, events, things to do..." class="ui-autocomplete-input search-form-input" autocomplete="off"/>
                                             <div class="suggestion_list">
                                                 <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content hero-search-input__suggest" id="ui-id-1" tabindex="0" style="display: none;">
                                                     <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
@@ -28,6 +32,7 @@
                                                     <li class="ui-menu-item" id="ui-id-2" tabindex="-1">Sparkle Salon &amp; Academy, Navrangpura, Ahmedabad <span>outlet</span></li>
                                                 </ul>
                                             </div>
+                                            <input type="hidden" name="keyword"  value="" />
                                         </div>
                                         <div class="hero-search-button">
                                             <button type="submit" class="button prefix search-button"></button>
@@ -43,43 +48,43 @@
                 <div class="row">
                     <ul>
                         <li class="js-ga-icon-item">
-                            <a href="/offers/ahmedabad/food-and-drink">
+                            <a href="#">
                                 <img height="60px" width="60px" alt="Food &amp; Drink" src="//dynamic.nearbuy.com/c1fe2c98-57c3-4568-b2aa-503027b01c6b"/>
                                 <p>Food &amp; Drink</p>
                             </a>
                         </li>
                         <li class="js-ga-icon-item">
-                            <a href="/offers/ahmedabad/spa-and-massage">
+                            <a href="#">
                                 <img height="60px" width="60px" alt="Spa &amp; Massage" src="//dynamic.nearbuy.com/cf370019-bc71-40d0-ad21-1da05a69306b"/>
                                 <p>Spa &amp; Massage</p>
                             </a>
                         </li>
                         <li class="js-ga-icon-item">
-                            <a href="/offers/ahmedabad/beauty-and-salon">
+                            <a href="#">
                                 <img height="60px" width="60px" alt="Beauty &amp; Salon" src="//dynamic.nearbuy.com/bce6a031-2e5e-4bd3-88cb-c9ec55842ecc"/>
                                 <p>Beauty &amp; Salon</p>
                             </a>
                         </li>
                         <li class="js-ga-icon-item">
-                            <a href="/offers/ahmedabad/health">
+                            <a href="#">
                                 <img height="60px" width="60px" alt="Health &amp; Wellness" src="//dynamic.nearbuy.com/37dff27c-cfc1-4c44-8322-b4121c50f297"/>
                                 <p>Health &amp; Wellness</p>
                             </a>
                         </li>
                         <li class="js-ga-icon-item">
-                            <a href="/offers/ahmedabad/activities">
+                            <a href="#">
                                 <img height="60px" width="60px" alt="Activities" src="//dynamic.nearbuy.com/463bcae3-36f1-4ec4-ba40-551319dcbfa5"/>
                                 <p>Activities</p>
                             </a>
                         </li>
                         <li class="js-ga-icon-item">
-                            <a href="/offers/ahmedabad/home-and-auto">
+                            <a href="#">
                                 <img height="60px" width="60px" alt="Personal, Home &amp; Auto" src="//dynamic.nearbuy.com/d074c224-456c-419e-a1f2-f729c71e118e"/>
                                 <p>Personal, Home &amp; Auto</p>
                             </a>
                         </li>
                         <li class="js-ga-icon-item">
-                            <a href="/travel">
+                            <a href="#">
                                 <img alt="Travel" src="//d2xy0t4o47vcev.cloudfront.net/resources/local/images/nearbuy/travel_new.png" height="60px" width="60px"/>
                                 <p>Hotels</p>
                             </a>
@@ -294,4 +299,16 @@
         </div>
     </div>
 </div>
+<script type="text/javascript"><!--
+$('#home-location li a').on('click', function() {
+    var city_name = $(this).text();
+    var link = $(this).data('city');
+    var city_input = '<input type="hidden" name="city" value="' + link + '" />';
+    $('.search-location button span').text(city_name);
+    $('#hero-search-input').find('input[name="city"]').remove();
+    
+    $('#hero-search-input').append(city_input);
+});
+
+//--></script>
 <?php echo $footer; ?>

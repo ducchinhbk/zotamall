@@ -82,7 +82,7 @@
 				<div class="widget-header-user"  id="widget-header-user">
 					<ul id="user" class="nav navbar-nav navbar-right navbar-top">
 						<li class="out children">
-                            <a href="<?php echo $explore;?>" class="explore">Mua ở đâu</a>
+                            <a href="<?php echo $explore;?>" class="explore">Khám phá</a>
 						</li>
                         <li class="out">
     				        <a href="#">Hỗ trợ</a>

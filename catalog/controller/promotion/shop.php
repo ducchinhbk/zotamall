@@ -12,7 +12,6 @@ class ControllerPromotionShop extends Controller {
 		}
         
 		$this->load->model('catalog/shop');
-
 		$shop_info = $this->model_catalog_shop->getShop($shop_id);
 
 		if ($shop_info) {
