@@ -29,15 +29,15 @@ class ControllerPromotionShop extends Controller {
     				$image = $this->model_tool_image->resize('no_image.png', 393, 151);
     			}
                 if ($this->customer->isLogged() && $this->customer->getId() == $shop_info['customer_id']) {
-                    $action = '<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                  <i class="fa fa-circle"></i>
-                                  <i class="fa fa-circle"></i>
-                                  <i class="fa fa-circle"></i>
+                    $action = '<div class="loged-action">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                  <i class="icon lg-icon icon-action"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="'. $this->url->custom_link($result['link'], 'action=edit', true) .'">Chỉnh sữa</a></li>
                                     <li><a href="javascript:void(0)" class="remove-action" data-id="'. $result['promotion_id'] .'" data-popup-open="popup-confirm">Xóa</a></li>
-                                </ul>';
+                                </ul>
+                                </div> ';
                 }
                 else{
                     $action = '';
@@ -54,7 +54,7 @@ class ControllerPromotionShop extends Controller {
     			);
             
             }
-            
+            $data['viewLgMap'] = $this->url->custom_link('promotion/viewmap', array('lat' => $shop_info['latitute'], 'long' => $shop_info['longtitute']));
           
             $data['footer'] = $this->load->controller('common/footer');
     		$data['header'] = $this->load->controller('common/header');

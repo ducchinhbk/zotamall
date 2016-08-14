@@ -52,7 +52,8 @@ class ControllerPromotionPromotion extends Controller {
   				'city' => $shop_info['city'],
                 'latitute' => $shop_info['latitute'],
                 'longtitute' => $shop_info['longtitute'],
-                'link' => $this->url->custom_link($shop_info['link'])
+                'link' => $this->url->custom_link($shop_info['link']),
+                'viewLgMap' => $this->url->custom_link('promotion/viewmap', array('lat' => $shop_info['latitute'], 'long' => $shop_info['longtitute'])),
    			);
             
             $data['promotion'] = $promotion_info;

@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 
-<div id="pf-detail" class="full-100">
+<div class="full-100 mgt0">
     <div class="container">
         <div class="row">
             <div class="about-cover-o about-box full-100" style="background: rgba(0, 0, 0, 0) url(http://media.sukienhay.com/cache/images/event/2088927129.png) no-repeat scroll center center / cover; height: 275px;">
@@ -26,14 +26,14 @@
                             </div>
                             <div class="pf-box-content">
                                 <ul>
-                                    <li><i class="fa fa-suitcase"></i> Địa chỉ: <br/>
+                                    <li><i class="icon icon-location"></i> Địa chỉ: <br/>
                                         <?php echo $shop_info['address'].', '. $shop_info['district'] .', '. $shop_info['city'];?>                                     
                                     </li>
-                                    <li><i class="fa fa-calculator"></i> Điện thoại: 
+                                    <li><i class="icon icon-phone"></i> Điện thoại:
                                         <?php echo $shop_info['telephone'];?>
                                     </li>
                                     <li>
-                                        <i class="fa fa-building"></i> Giờ mở cửa: <br/>
+                                        <i class="icon icon-door"></i> Giờ mở cửa: <br/>
                                         <?php echo $shop_info['working_time'];?>
                                     </li>
 
@@ -73,7 +73,7 @@
             					</script>
             					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzzE_zON49mpNwFjeFT8WnOznyNXs70YQ&callback=initAutocomplete" async defer></script>
             					<p class="type-xs lg-map-view">
-                            		<a href="#" data-reveal-id="getMap">
+                            		<a href="<?php echo $viewLgMap; ?>" data-reveal-id="getMap" target="_blank">
                             		<i class="fa fa-location-arrow"></i> Xem lớn</a>
                             	</p>
                         </div>
@@ -99,9 +99,7 @@
                                             <a href="<?php echo $promotion['link']; ?>" class="img-thumb">
                                                 <img class="img-responsive avatar" src="<?php echo $promotion['image']; ?>" alt="<?php echo $promotion['name']; ?>"/>
                                             </a>
-                                            <div class="loged-action">
-                                                 <?php echo $promotion['action']; ?>
-                                            </div>   
+                                            <?php echo $promotion['action']; ?> 
                                         </div>
                                         <div class="description border-item">
                                             <h3>

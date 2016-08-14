@@ -61,7 +61,7 @@
 					</script>
 					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzzE_zON49mpNwFjeFT8WnOznyNXs70YQ&callback=initAutocomplete" async defer></script>
 					<p class="type-xs lg-map-view">
-                		<a href="#" data-reveal-id="getMap">
+                		<a href="<?php echo $shop['viewLgMap'];?>" data-reveal-id="getMap" target="_blank">
                 		<i class="fa fa-location-arrow"></i> Xem bản đồ lớn	</a>
                 	</p>
 				</div>
@@ -76,12 +76,12 @@
 						<ul style="display: block; float: left">
                             <li>
 								<div class="col-md-5 pdl0 pdr0">
-									<a class="event-avatar" href="liveshow-hoai-linh-chi-tai-truong-giang-chi-tai-dinh-menh-1995074-2016.html">
+									<a class="event-avatar" href="#">
 										<img src="http://media.sukienhay.com/cache/images/event/1620014086.png" class="img-responsive" alt="Liveshow Hoài Linh - Chí Tài - Trường Giang: Chỉ Tại Định Mệnh" />                
                                     </a>
 								</div>
 								<div class="title col-md-7 pdr0 pdl10">
-									<h3><a href="liveshow-hoai-linh-chi-tai-truong-giang-chi-tai-dinh-menh-1995074-2016.html" class="nameevent">Liveshow Hoài Linh - Chí Tài - Trường Giang: Chỉ Tại Định Mệnh</a></h3>
+									<h3><a href="#" class="nameevent">Liveshow Hoài Linh - Chí Tài - Trường Giang: Chỉ Tại Định Mệnh</a></h3>
 									<span class="date"><i class="fa fa-map-marker"></i> Hồ Chí Minh</span>
 								</div>
 							</li>
@@ -227,15 +227,35 @@
     				    </div>
                     </div> <!-- END THONG KE LUOT DANH Gia -->
     				<div class="col-md-12"></div>
-    				<ul class="full-100" id="review-content">
+    				<div class="event-comment full-100">
+                        <ul id="comment-show">
+                            <input type="hidden" id="count_reply_comment_533" value="1"/>
+                            <li class="comment_parent_0 comment_parent" id="comment_id_533">
+            
+                                <div class="icon">
+                                    <a href="u/__1455895471.113.178.52.227__" target="_blank">
+                                        <img src="http://media.sukienhay.com/cache/images/user/171830/2217279843.png" alt="Ảnh 1" class="img-responsive img-circle" width="100%"/>
+                                    </a>
+                                </div>
+                                <div class="comment">
+                                <span><a class="name" href="u/__1455895471.113.178.52.227__" target="_blank"><strong>
+                                    Vũ Anh Tuân </strong></a> - <i>4 tuần trước</i>&nbsp;&nbsp;
                     
-                    </ul>
-    				<ul class="full-100" id="review-content-2">
-    
-                    </ul>
+                                </span>
+                                <span>sự kiện này có tính phí ko ?</span>     
+                                    <div class="clearfix"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="loader-inner ball-pulse text-center hidden" id="loader-review"></div>
                 </div>
-            
+                <div class="event-reviews full-100">
+				    <h3 class="sidebarst2">Hỏi đáp</h3>
+                    <div class="event-comment full-100">
+                        <div class="fb-comments" data-href="http://localhost/saleoff" data-width="100%" data-numposts="5"></div>
+                    </div>
+                </div>
                 <div class="event-other full-100">
                     <h3 class="sidebarst2">Sự kiện liên quan khác</h3>
                     <div id="event-related">
@@ -243,7 +263,7 @@
                             <li class="col-md-4 mgl0 mgr0">
                                 <img src="http://media.sukienhay.com/cache/images/event/73802211.png" class="img-responsive" alt="BEETHOVEN &amp; BRAHMS" />            
                                 <div class="title">
-                                    <h3><a href="beethoven-brahms-1995417-2016.html" class="nameevent">BEETHOVEN &amp; BRAHMS</a></h3>
+                                    <h3><a href="#" class="nameevent">BEETHOVEN &amp; BRAHMS</a></h3>
                                     <span class="date">19:00 - 24/06/2016</span>
                                     <span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
                                 </div>
@@ -251,7 +271,7 @@
                             <li class="col-md-4 mgl0 mgr0">
                                 <img src="http://media.sukienhay.com/cache/images/event/1871318128.png" class="img-responsive" alt="Hòa nhạc - Tình khúc BOLERO" />            
                                 <div class="title">
-                                    <h3><a href="hoa-nhac-tinh-khuc-bolero-1995420-2016.html" class="nameevent">Hòa nhạc - Tình khúc BOLERO</a></h3>
+                                    <h3><a href="#" class="nameevent">Hòa nhạc - Tình khúc BOLERO</a></h3>
                                     <span class="date">20:00 - 24/06/2016</span>
                                     <span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
                                 </div>
@@ -259,7 +279,7 @@
                             <li class="col-md-4 mgl0 mgr0">
                                 <img src="http://media.sukienhay.com/cache/images/event/2182060529.png" class="img-responsive" alt="Đêm nhạc danh ca PHƯƠNG DUNG - GIAO LINH" />            
                                 <div class="title">
-                                    <h3><a href="dem-nhac-danh-ca-phuong-dung-giao-linh-1995568-2016.html" class="nameevent">Đêm nhạc danh ca PHƯƠNG DUNG - GIAO LINH</a></h3>
+                                    <h3><a href="#" class="nameevent">Đêm nhạc danh ca PHƯƠNG DUNG - GIAO LINH</a></h3>
                                     <span class="date">21:00 - 25/06/2016</span>
                                     <span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
                                 </div>
@@ -268,7 +288,7 @@
                             <li class="col-md-4 mgl0 mgr0">
                                 <img src="http://media.sukienhay.com/cache/images/event/3036481794.png" class="img-responsive" alt="Liveshow ĐÀM VĨNH HƯNG - Có Những Niềm Riêng" />            
                                 <div class="title">
-                                    <h3><a href="liveshow-dam-vinh-hung-co-nhung-niem-rieng-1995569-2016.html" class="nameevent">Liveshow ĐÀM VĨNH HƯNG - Có Những Niềm Riêng</a></h3>
+                                    <h3><a href="#" class="nameevent">Liveshow ĐÀM VĨNH HƯNG - Có Những Niềm Riêng</a></h3>
                                     <span class="date">20:30 - 30/06/2016</span>
                                     <span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
                                 </div>
@@ -276,7 +296,7 @@
                             <li class="col-md-4 mgl0 mgr0">
                                 <img src="http://media.sukienhay.com/cache/images/event/3395832094.png" class="img-responsive" alt="Liveshow Ông Hoàng Nhạc Sến - NGỌC SƠN" />            
                                 <div class="title">
-                                    <h3><a href="liveshow-ong-hoang-nhac-sen-ngoc-son-1995570-2016.html" class="nameevent">Liveshow Ông Hoàng Nhạc Sến - NGỌC SƠN</a></h3>
+                                    <h3><a href="#" class="nameevent">Liveshow Ông Hoàng Nhạc Sến - NGỌC SƠN</a></h3>
                                     <span class="date">20:30 - 08/07/2016</span>
                                     <span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
                                 </div>
@@ -284,7 +304,7 @@
                             <li class="col-md-4 mgl0 mgr0">
                                 <img src="http://media.sukienhay.com/cache/images/event/1495721632.png" class="img-responsive" alt="Danh ca Ý LAN với đêm nhạc chủ đề: &quot;Dạ Khúc&quot;" />            
                                 <div class="title">
-                                    <h3><a href="danh-ca-y-lan-voi-dem-nhac-chu-de-da-khuc-1995415-2016.html" class="nameevent">Danh ca Ý LAN với đêm nhạc chủ đề: &quot;Dạ Khúc&quot;</a></h3>
+                                    <h3><a href="#" class="nameevent">Danh ca Ý LAN với đêm nhạc chủ đề: &quot;Dạ Khúc&quot;</a></h3>
                                     <span class="date">21:00 - 15/07/2016</span>
                                     <span class="local"><i class="fa fa-map-marker"></i>Quận 1, Hồ Chí Minh</span>
                                 </div>
@@ -304,4 +324,12 @@ $('#display-telephone').on('click', function() {
 });
 
 //--></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <?php echo $footer; ?>

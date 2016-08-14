@@ -415,7 +415,7 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 #event-sponser h3.box-title{font-size:18px; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:7px 0;}
 #event-sponser li{width:100%; float:left; margin-bottom:10px;padding-bottom:10px;}
 #event-sponser a.event-avatar{max-height:72px; overflow:hidden; display:block;}
-#event-sponser .title h3{font-size:16px; height:35px; overflow: hidden; font-size:12px; margin:0 0 5px; font-weight:700; line-height: 150%;}
+#event-sponser .title h3{font-size:13px; height:35px; overflow: hidden;margin:0 0 5px; font-weight:700; line-height: 150%;}
 #event-sponser .title span{font-size:12px; margin:0 0 3px;}
 #event-related .date{}
 #event-related .local{height:35px; overflow: hidden; text-overflow: ellipsis; white-space:pre-wrap;}
@@ -578,16 +578,16 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
 .acc-right h3.title{font-size:20px; margin:0 0 15px;line-height: 38px; border-bottom:1px solid #E5E5E5;}
 
 .pf-top{ padding: 20px 0; border-top:0;}
-.pf-top .img-avatar{z-index:100; position:relative; padding:5px; height:150px; width:150px;}
+.pf-top .img-avatar{z-index:100; position:relative; padding:0; height:150px; width:150px;border: 1px solid #ccc;}
 .pf-top h1{margin:7px 0;font-size: 30px; color: #524C4C;}
-.pf-static .col-md-2{font-size:24px; text-align:center; color:#777;}.pf-static .col-md-2 strong{font-size:16px; font-weight:normal; color:#303b46;}
+.pf-static .col-md-2{font-size:18px; text-align:center; color:#555;}.pf-static .col-md-2 strong{font-size:16px; font-weight:normal; color:#303b46;}
 .pf-box{background-color: #fff; padding: 10px 0; margin-bottom:10px;}
 .pf-box .pf-box-title {border-bottom: 1px solid #F1F1F1;margin-bottom: 10px;}
-.pf-box .pf-box-title h3{margin:10px 0; padding:0 0 0 10px; font-size:14px;font-weight:bold;}
+.pf-box .pf-box-title h3{margin:10px 0; padding:0 0 0 10px; font-size:16px;font-weight:bold;}
 .pf-box .pf-box-content{padding:10px; overflow:hidden;}
 .pf-box .pf-box-content ul.es-resuit-item .bi-img{height:150px; position: relative; overflow:hidden;}
 
-.pf-box-profile li, .pf-box-activity li{margin-bottom:15px; font-size:12px;}
+.pf-box-profile li, .pf-box-activity li{margin-bottom:15px; font-size:13px;max-height: 35px;overflow: hidden;}
 .pf-box-profile li i.fa, .pf-box-activity li i.fa{display:block; float:left; margin-right:10px; font-size: 10px; color:#777; margin-top:1px;}
 .pf-box-profile li a, .pf-box-activity li a{color:#0068bb;}
 .pf-box .es-resuit-item h3{
@@ -597,7 +597,7 @@ h3.sidebarst2{line-height:48px; background-color:#f9f9f9; padding-left:10px; fon
     line-height: 1.5em;
     margin-top: 5px;
 }
-.box-avatar{width:150px; height:150px; background-color:#000; border-radius:80px;}
+.box-avatar{width:150px; height:150px; border-radius:80px;}
 .box-avatar #btn-uploadimage-popup{display:none;}
 .box-avatar:hover #btn-uploadimage-popup{
 	display:block;
@@ -849,12 +849,12 @@ p.date, p.local{
 }
 .home-search input{padding-left: 25px;}
 .headbox h2{font-size: 24px;margin-top: 20px;}
-#pf-detail{border-top: 1px solid #ddd;}
+#pf-detail{margin-top: 10px;}
 .pf-place{
     width: 160px;
     height: 160px;
     float: right;
-    margin-top: 123px;
+    margin-top: 90px;
     margin-right: 10px;
 }
 .pf-static a strong{
@@ -866,16 +866,15 @@ p.date, p.local{
     border: 1px solid #ddd !important;
 }
 .pf-sidebar{
-    margin-top: 15px;
+    margin-top: 0;
     background-color: #fff;
 }
 .loged-action{
     position: absolute;
     bottom: 10px;
     right: 3px;
-    background-color: rgba(255,255,255,.15);
-    box-shadow: 0 1px 2px rgba(0,0,0,.5);
-    padding: 6px 10px;
+    background-color: rgba(0,0,0,.45);
+    padding: 0px 6px;
     text-align: center;
     color: #fff;
     border-radius: 10px;
@@ -890,7 +889,7 @@ p.date, p.local{
 .loged-action>.dropdown-menu{
     right: -2px !important;
     left: auto !important;
-    top: -256%!important;
+    top: -62px!important;
     border: 0 solid rgba(0,0,0,0.25) !important;
     box-shadow: 0 1px 4px rgba(0,0,0,0.25) !important;
     z-index: 33333;
@@ -1588,4 +1587,18 @@ p.date, p.local{
     margin: 0;
     font-family: 'Droid Sans',sans-serif;
 }
+i.icon{
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: url("../img/sprite.png") no-repeat;
+    margin-right: 3px;
+}
+i.lg-icon{width: 18px;height: 18px;}
+i.icon-location{background-position: -15px -251px;}
+i.icon-door{background-position: -1px -239px;}
+i.icon-phone{background-position: 0px -226px}
+i.icon-edit{background-position: -54px -19px;}
+i.icon-action{background-position: 0 -20px;}
+i.icon-user-profile{background-position: -1px -172px}
 /***End Chinh CSS***/
