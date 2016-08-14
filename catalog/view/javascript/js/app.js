@@ -17,6 +17,11 @@ if(window.location.hash && window.location.hash == '#_=_'){
 	history.pushState('', document.title, window.location.pathname); // nice and clean
 }
 
+//open facebook share
+function fb_share(url) {
+    window.open( url, "myWindow", "status = 1, height = 500, width = 800, resizable = 0" )
+}
+
 function str_replace(search, replace, str){
 	var ra = replace instanceof Array, sa = str instanceof Array, l = (search = [].concat(search)).length, replace = [].concat(replace), i = (str = [].concat(str)).length;
 	while(j = 0, i--)
@@ -187,7 +192,11 @@ jQuery(document).ready(function($){
     })($.nicescroll);
 
     //=======================================================
-
+    
+    //bookmark process
+    $(".bookmark-action a").click(function(){
+        $(this).toggleClass('active'); 
+    });
     
 });
 

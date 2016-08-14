@@ -57,6 +57,7 @@ class ControllerPromotionPromotion extends Controller {
    			);
             
             $data['promotion'] = $promotion_info;
+            $data['fb_share'] = $this->url->custom_link($promotion_info['link']);
             
             $data['footer'] = $this->load->controller('common/footer');
     		$data['header'] = $this->load->controller('common/header');

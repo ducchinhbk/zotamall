@@ -141,17 +141,24 @@
 					</div>
 					<div class="col-md-5 reviews text-right hidden-xs hidden-sm pdr00 pdl00 ">
 						<div class="mgb20">
-							<div class="col-md-4 pdl00 pdr05" data-toggle="tooltip" title="Lượt xem">
+							<div class="col-md-4 pdl00 pdr05" title="Lượt xem">
 								
 							</div>
-							<div class="col-md-5 pdl00 pdr00" data-toggle="tooltip" title="Đánh giá">
+							<div class="col-md-5 pdl00 pdr00" title="Đánh giá">
 								<span class="rate">
 									<a id="event-review-link" href="javascript:void(0);">
 									<i class="fa fa-star" style="color:#ffd600;"></i> 0.0 | 0 đánh giá</a>
 								</span>
 							</div>
 						</div>
-
+                        <div class="mgt50">
+				            <a id="send-message-btn" href="javascript:void(0);" class="btn btn-sm btn-default">
+                                <i class="fa fa-fw fa-envelope"></i>Gửi cho bạn bè
+                            </a>
+						    <a href="javascript:fb_share('http://www.facebook.com/sharer.php?u=<?php echo $fb_share; ?>')" class="btn btn-sm btn-default facebook-btn" title="">
+                                <i class="fa fa-facebook-official"></i> Chia sẻ facebook
+                            </a>
+					   </div>
 					</div>
 					<div class="clearfix"></div>
 				</div>

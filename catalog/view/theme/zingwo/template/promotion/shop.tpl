@@ -99,6 +99,16 @@
                                             <a href="<?php echo $promotion['link']; ?>" class="img-thumb">
                                                 <img class="img-responsive avatar" src="<?php echo $promotion['image']; ?>" alt="<?php echo $promotion['name']; ?>"/>
                                             </a>
+                                            <div class="bookmark-action">
+                                                <a class="bookmark-item" data-itemId="<?php echo $promotion['promotion_id']; ?>" title="Lưu vào yêu thích">
+                                                  <i class="fa fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <div class="share-action">
+                                                <a href="javascript:fb_share('http://www.facebook.com/sharer.php?u=<?php echo $promotion['link']; ?>')" title="Chia sẻ trên facebook">
+                                                  <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </div>
                                             <?php echo $promotion['action']; ?> 
                                         </div>
                                         <div class="description border-item">
