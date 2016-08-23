@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> So Rẻ - Tìm giá rẻ, so sánh giá, thông tin sản phẩm, đánh giá, khuyến mãi;  </title>
+    <link rel="canonical" href="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tìm giá rẻ, tốt nhất, so sánh giá. Tìm sản phẩm, so sánh, đặc tính - cấu hình, đánh giá (bài viết, comment, nhận xét, bình luận), nơi bán, khuyến mãi" >
+    <meta name="keywords" content="tìm so sánh giá rẻ nhất tốt nhất thông tin sản phẩm đặc tính cấu hình đánh giá bài viết comment nhận xét bình luận nơi bán khuyến mãi" >
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="distribution" content="Global" />
+    <meta name="revisit" content="1 days" />
+    <meta name="geo.placename" content="Vietnamese" />
+    <meta name="geo.region" content="VN" />
+    <meta name="dc.creator" content="sanh sanh gia" />
+    <meta name="generator" content="sanh sanh gia" />
+    <link rel="dns-prefetch" href="#">
+    <meta http-equiv="content-language" content="vi" />
+    <link rel="shortcut icon" href="images/favicon.ico?v=1.18"/>
+
+    <link type="text/css" rel="stylesheet" href="css/style.min.css" media="screen" />
+    
+    <script src="js/jquery-1.9.1.min.js?v=1.18"></script>
+</head>
+<body class="sore-style homepage">
+    <!-- homepage -->
+<div class="home-section">
+  <div class="logo"><h1><img src="images/logo-home.png" alt=""/></h1></div>
+  <div class="block-search-wrap">
+    <div class="block-search">    
+      <form name="searchForm" id="searchForm" method="POST" action="submitSuggestion" onsubmit="return submitSearch();">
+        <input type="search" name="txt_Keyword" value="" id="txt_Keyword" maxlength="256" dir="auto" placeholder="Bạn cần mua gì?" autocomplete="off" />
+        <input type="hidden" id="h_suggest_id" name="h_suggest_id" value="">
+        <input type="hidden" id="h_suggest_type" name="h_suggest_type" value="">
+        <input type="hidden" name="isPost" value="1">                            
+        <button type="submit" id="searchSubmit"><svg class="icon icon-search2"><use xlink:href="#icon-search2"></use></svg></button>   
+      </form> 
+      <!--  
+      <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content">
+        <li class="ui-menu-item"  tabindex="-1"><a>Camera IP hồng ngoại</a></li>
+        <li class="ui-menu-item"  tabindex="-1"><a>Camera IP hồng ngoại</a></li>
+        <li class="ui-menu-item"  tabindex="-1"><a>Camera IP hồng ngoại</a></li>
+      </ul> 
+      -->  
+    </div>    
+  </div>
+  <div class="block-slide-txt">
+    <div class="slide-txt" id="slide-txt">
+      <div class="txt"><p><b>sore.vn</b> liên tục cập nhật giá cả, sản phẩm mới</p></div>
+      <div class="txt"><p><b>sore.vn</b> giúp bạn so sánh giá cả giữa các nơi bán khác nhau</p></div>
+      <div class="txt"><p><b>sore.vn</b> giúp bạn so sánh các sản phẩm khác nhau</p></div>
+    </div>
+  </div>  
+  <div class="block-padding"></div>
+  <div class="block-ralative">
+    <div class="suggestion_keywords">
+		<div class='tl'>Có thể bạn quan tâm:</div>
+		<a href="#">Máy tính</a>
+		<a href="#">Mực máy in</a>
+		<a href="#">Máy in phun màu</a>
+		<a href="#">Heels Shoes</a>
+		<a href="#">Máy sấy</a>
+		<a href="#">Ba lô</a>
+		<a href="#">Bao da iPhone</a>
+		<a href="#">Ấm siêu tốc</a>
+		<a href="#">Mực máy in HP</a>
+		<a href="#">Black Toner Cartridge</a>    
+	</div>
+  </div>
+  <div class="block-bg-bot"> 
+  <div class="block-category">
+    <div class="title show">
+      <svg class="icon icon-arrow-right2"><use xlink:href="#icon-arrow-right2"></use></svg>
+      <span>TÌM THEO DANH MỤC</span>
+      <svg class="icon icon-arrow-left2"><use xlink:href="#icon-arrow-left2"></use></svg>
+    </div>
+    
+    <div class="cate-content mobile-cate">
+		<ul>
+			<li>
+				<span class='icon-cate dien-thoai-may-tinh-bang'></span>
+				<a href="#" title="Điện thoại, Máy tính bảng">Điện thoại, Máy tính bảng</a>
+			</li>
+			<li>
+				<span class='icon-cate tivi-video-am-thanh'></span>
+				<a href="#" title="Tivi, Video, Âm thanh">Tivi, Video, Âm thanh</a>
+			</li><li><span class='icon-cate thiet-bi-van-phong'></span><a href="tim-kiem?cat=8000-thiet-bi-van-phong" title="Thiết bị văn phòng">Thiết bị văn phòng</a></li><li><span class='icon-cate may-tinh-laptop'></span><a href="tim-kiem?cat=1000-may-tinh-laptop" title="Máy tính, laptop">Máy tính, laptop</a></li><li><span class='icon-cate may-anh-ky-thuat-so'></span><a href="tim-kiem?cat=3000-may-anh-ky-thuat-so" title="Máy ảnh, kỹ thuật số">Máy ảnh, kỹ thuật số</a></li><li><span class='icon-cate dien-lanh'></span><a href="tim-kiem?cat=2000-dien-lanh" title="Điện lạnh">Điện lạnh</a></li><li><span class='icon-cate gia-dung'></span><a href="tim-kiem?cat=5000-gia-dung" title="Gia dụng">Gia dụng</a></li><li><span class='icon-cate Me_va_be'></span><a href="tim-kiem?cat=10000-Me_va_be" title="Mẹ và bé">Mẹ và bé</a></li><li><span class='icon-cate Thoi_trang_my_pham_the_thao'></span><a href="tim-kiem?cat=11000-Thoi_trang_my_pham_the_thao" title="Thời trang, mỹ phẩm, thể thao">Thời trang, mỹ phẩm, thể thao</a></li><li><span class='icon-cate do-dung-nha-bep'></span><a href="tim-kiem?cat=6000-do-dung-nha-bep" title="Đồ dùng nhà bếp">Đồ dùng nhà bếp</a></li><li><span class='icon-cate Suc_khoe_y_te'></span><a href="tim-kiem?cat=14000-Suc_khoe_y_te" title="Sức khỏe, y tế">Sức khỏe, y tế</a></li><li><span class='icon-cate An_ninh'></span><a href="tim-kiem?cat=13000-An_ninh" title="An ninh">An ninh</a></li><li><span class='icon-cate Dich_vu_sua_chua_bao_tri'></span><a href="tim-kiem?cat=12000-Dich_vu_sua_chua_bao_tri" title="Dịch vụ, sửa chữa, bảo trì">Dịch vụ, sửa chữa, bảo trì</a></li><li><span class='icon-cate Noi_that_Ngoai_that_VLXD'></span><a href="tim-kiem?cat=9000-Noi_that_Ngoai_that_VLXD" title="Nội thất, Ngoại thất, VLXD">Nội thất, Ngoại thất, VLXD</a></li><li><span class='icon-cate Thiet_bi_dien_dien_tu_dung_cu_co_khi'></span><a href="tim-kiem?cat=7000-Thiet_bi_dien_dien_tu_dung_cu_co_khi" title="Thiết bị điện, điện tử, dụng cụ cơ khí">Thiết bị điện, điện tử, dụng cụ cơ khí</a></li><li><span class='icon-cate o_to_xe_may_xe_dap'></span><a href="tim-kiem?cat=15000-o_to_xe_may_xe_dap" title="Ô tô, xe máy, xe đạp">Ô tô, xe máy, xe đạp</a></li><li><span class='icon-cate Cay_trong_vat_nuoi'></span><a href="tim-kiem?cat=16000-Cay_trong_vat_nuoi" title="Cây trồng, vật nuôi">Cây trồng, vật nuôi</a></li><li><span class='icon-cate Sach_tranh_qua_tang'></span><a href="tim-kiem?cat=110000-Sach_tranh_qua_tang" title="Sách, tranh, quà tặng">Sách, tranh, quà tặng</a></li></ul>      
+    </div>	
+    <div class="cate-content tablet-cate">
+      <ul><li><span class='icon-cate dien-thoai-may-tinh-bang'></span><a href="tim-kiem?cat=100-dien-thoai-may-tinh-bang" title="Điện thoại, Máy tính bảng">Điện thoại, Máy tính bảng</a></li><li><span class='icon-cate tivi-video-am-thanh'></span><a href="tim-kiem?cat=4000-tivi-video-am-thanh" title="Tivi, Video, Âm thanh">Tivi, Video, Âm thanh</a></li><li><span class='icon-cate thiet-bi-van-phong'></span><a href="tim-kiem?cat=8000-thiet-bi-van-phong" title="Thiết bị văn phòng">Thiết bị văn phòng</a></li><li><span class='icon-cate may-tinh-laptop'></span><a href="tim-kiem?cat=1000-may-tinh-laptop" title="Máy tính, laptop">Máy tính, laptop</a></li><li><span class='icon-cate may-anh-ky-thuat-so'></span><a href="tim-kiem?cat=3000-may-anh-ky-thuat-so" title="Máy ảnh, kỹ thuật số">Máy ảnh, kỹ thuật số</a></li><li><span class='icon-cate dien-lanh'></span><a href="tim-kiem?cat=2000-dien-lanh" title="Điện lạnh">Điện lạnh</a></li><li><span class='icon-cate gia-dung'></span><a href="tim-kiem?cat=5000-gia-dung" title="Gia dụng">Gia dụng</a></li><li><span class='icon-cate Me_va_be'></span><a href="tim-kiem?cat=10000-Me_va_be" title="Mẹ và bé">Mẹ và bé</a></li><li><span class='icon-cate Thoi_trang_my_pham_the_thao'></span><a href="tim-kiem?cat=11000-Thoi_trang_my_pham_the_thao" title="Thời trang, mỹ phẩm, thể thao">Thời trang, mỹ phẩm, thể thao</a></li><li><span class='icon-cate do-dung-nha-bep'></span><a href="tim-kiem?cat=6000-do-dung-nha-bep" title="Đồ dùng nhà bếp">Đồ dùng nhà bếp</a></li><li><span class='icon-cate Suc_khoe_y_te'></span><a href="tim-kiem?cat=14000-Suc_khoe_y_te" title="Sức khỏe, y tế">Sức khỏe, y tế</a></li><li><span class='icon-cate An_ninh'></span><a href="tim-kiem?cat=13000-An_ninh" title="An ninh">An ninh</a></li><li><span class='icon-cate Dich_vu_sua_chua_bao_tri'></span><a href="tim-kiem?cat=12000-Dich_vu_sua_chua_bao_tri" title="Dịch vụ, sửa chữa, bảo trì">Dịch vụ, sửa chữa, bảo trì</a></li><li><span class='icon-cate Noi_that_Ngoai_that_VLXD'></span><a href="tim-kiem?cat=9000-Noi_that_Ngoai_that_VLXD" title="Nội thất, Ngoại thất, VLXD">Nội thất, Ngoại thất, VLXD</a></li><li><span class='icon-cate Thiet_bi_dien_dien_tu_dung_cu_co_khi'></span><a href="tim-kiem?cat=7000-Thiet_bi_dien_dien_tu_dung_cu_co_khi" title="Thiết bị điện, điện tử, dụng cụ cơ khí">Thiết bị điện, điện tử, dụng cụ cơ khí</a></li><li><span class='icon-cate o_to_xe_may_xe_dap'></span><a href="tim-kiem?cat=15000-o_to_xe_may_xe_dap" title="Ô tô, xe máy, xe đạp">Ô tô, xe máy, xe đạp</a></li><li><span class='icon-cate Cay_trong_vat_nuoi'></span><a href="tim-kiem?cat=16000-Cay_trong_vat_nuoi" title="Cây trồng, vật nuôi">Cây trồng, vật nuôi</a></li><li><span class='icon-cate Sach_tranh_qua_tang'></span><a href="tim-kiem?cat=110000-Sach_tranh_qua_tang" title="Sách, tranh, quà tặng">Sách, tranh, quà tặng</a></li></ul>      
+    </div>	
+    <div class="cate-content desktop-cate">
+      <ul><li><span class='icon-cate dien-thoai-may-tinh-bang'></span><a href="tim-kiem?cat=100-dien-thoai-may-tinh-bang" title="Điện thoại, Máy tính bảng">Điện thoại, Máy tính bảng</a></li><li><span class='icon-cate tivi-video-am-thanh'></span><a href="tim-kiem?cat=4000-tivi-video-am-thanh" title="Tivi, Video, Âm thanh">Tivi, Video, Âm thanh</a></li><li><span class='icon-cate thiet-bi-van-phong'></span><a href="tim-kiem?cat=8000-thiet-bi-van-phong" title="Thiết bị văn phòng">Thiết bị văn phòng</a></li><li><span class='icon-cate may-tinh-laptop'></span><a href="tim-kiem?cat=1000-may-tinh-laptop" title="Máy tính, laptop">Máy tính, laptop</a></li><li><span class='icon-cate may-anh-ky-thuat-so'></span><a href="tim-kiem?cat=3000-may-anh-ky-thuat-so" title="Máy ảnh, kỹ thuật số">Máy ảnh, kỹ thuật số</a></li><li><span class='icon-cate dien-lanh'></span><a href="tim-kiem?cat=2000-dien-lanh" title="Điện lạnh">Điện lạnh</a></li><li><span class='icon-cate gia-dung'></span><a href="tim-kiem?cat=5000-gia-dung" title="Gia dụng">Gia dụng</a></li><li><span class='icon-cate Me_va_be'></span><a href="tim-kiem?cat=10000-Me_va_be" title="Mẹ và bé">Mẹ và bé</a></li><li><span class='icon-cate Thoi_trang_my_pham_the_thao'></span><a href="tim-kiem?cat=11000-Thoi_trang_my_pham_the_thao" title="Thời trang, mỹ phẩm, thể thao">Thời trang, mỹ phẩm, thể thao</a></li><li><span class='icon-cate do-dung-nha-bep'></span><a href="tim-kiem?cat=6000-do-dung-nha-bep" title="Đồ dùng nhà bếp">Đồ dùng nhà bếp</a></li><li><span class='icon-cate Suc_khoe_y_te'></span><a href="tim-kiem?cat=14000-Suc_khoe_y_te" title="Sức khỏe, y tế">Sức khỏe, y tế</a></li><li><span class='icon-cate An_ninh'></span><a href="tim-kiem?cat=13000-An_ninh" title="An ninh">An ninh</a></li><li><span class='icon-cate Dich_vu_sua_chua_bao_tri'></span><a href="tim-kiem?cat=12000-Dich_vu_sua_chua_bao_tri" title="Dịch vụ, sửa chữa, bảo trì">Dịch vụ, sửa chữa, bảo trì</a></li><li><span class='icon-cate Noi_that_Ngoai_that_VLXD'></span><a href="tim-kiem?cat=9000-Noi_that_Ngoai_that_VLXD" title="Nội thất, Ngoại thất, VLXD">Nội thất, Ngoại thất, VLXD</a></li><li><span class='icon-cate Thiet_bi_dien_dien_tu_dung_cu_co_khi'></span><a href="tim-kiem?cat=7000-Thiet_bi_dien_dien_tu_dung_cu_co_khi" title="Thiết bị điện, điện tử, dụng cụ cơ khí">Thiết bị điện, điện tử, dụng cụ cơ khí</a></li><li><span class='icon-cate o_to_xe_may_xe_dap'></span><a href="tim-kiem?cat=15000-o_to_xe_may_xe_dap" title="Ô tô, xe máy, xe đạp">Ô tô, xe máy, xe đạp</a></li><li><span class='icon-cate Cay_trong_vat_nuoi'></span><a href="tim-kiem?cat=16000-Cay_trong_vat_nuoi" title="Cây trồng, vật nuôi">Cây trồng, vật nuôi</a></li><li><span class='icon-cate Sach_tranh_qua_tang'></span><a href="tim-kiem?cat=110000-Sach_tranh_qua_tang" title="Sách, tranh, quà tặng">Sách, tranh, quà tặng</a></li></ul>      
+    </div>	
+    
+  </div>
+  </div>
+</div>
+<footer id="footer" class="footer home footer-home">
+      <div class="content_footer">
+        <div class="copyright">©  Sore.vn</div>
+        <!--<div class="copyright">2.68MB</div>-->
+               <div class="policy">
+          <ul>
+            <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
+            <li><a href="#" title="Hướng dẫn  ">Hướng dẫn  </a></li>
+            <li><a href="#" title="Góp ý">Góp ý	</a></li>
+            <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+</footer>
+ 
+<!--         
+<script src="js/jquery.lazyload.min.js"></script>
+-->
+<script src="js/suggestSearch.min.js"></script>
+
+    </body>
+</html>
